@@ -50,7 +50,7 @@ RFulash 以 MIT 许可证开源，全文见 [LICENSE](LICENSE)。
 | RFulash | 本项目 | MIT | https://github.com/IChuJianI/RFulash |
 | Ruffle | Flash 引擎 | MIT OR Apache-2.0 | https://github.com/ruffle-rs/ruffle |
 
-上游 Ruffle 的完整 MIT / Apache-2.0 许可全文与第三方组件清单见 [Ruffle_LICENSE.md](Ruffle_LICENSE.md)；端口新增组件见 [RFulash_THIRD_PARTY_NOTICES.md](RFulash_THIRD_PARTY_NOTICES.md)。应用内「关于 → 开源许可」提供同样内容。
+上游 Ruffle 的完整 MIT / Apache-2.0 许可全文与第三方组件清单见 [Ruffle_LICENSE.md](Ruffle_LICENSE.md)；端口新增组件与引擎内嵌的 Noto Sans 字体（SIL OFL 1.1）见 [RFulash_THIRD_PARTY_NOTICES.md](RFulash_THIRD_PARTY_NOTICES.md)。应用内「关于 → 开源许可」提供同样内容。
 
 Ruffle 及所有第三方组件的版权归其各自作者所有。
 
