@@ -1,0 +1,6 @@
+{
+  "name": "libentry.so",
+  "version": "1.0.0",
+  "description": "NAPI bridge for the Ruffle HarmonyOS engine",
+  "types": "./index.d.ts"
+}

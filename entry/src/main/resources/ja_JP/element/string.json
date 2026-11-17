@@ -1,0 +1,804 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Ruffle を搭載した HarmonyOS ネイティブ Flash プレーヤー"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "RFulash"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "RFulash"
+    },
+    {
+      "name": "permission_download_reason",
+      "value": "ライブラリがダウンロードディレクトリにアクセスし、インポートした SWF ファイルを Download/com.52wfun.rfulash/players に保存します"
+    },
+    {
+      "name": "app_tagline",
+      "value": "HarmonyOS ネイティブ Flash プレーヤー"
+    },
+    {
+      "name": "home_title",
+      "value": "ホーム"
+    },
+    {
+      "name": "tab_play",
+      "value": "再生"
+    },
+    {
+      "name": "about_title",
+      "value": "このアプリについて"
+    },
+    {
+      "name": "status_initializing",
+      "value": "レンダラーを初期化しています…"
+    },
+    {
+      "name": "status_load_failed",
+      "value": "読み込みに失敗しました"
+    },
+    {
+      "name": "status_loading",
+      "value": "読み込み中…"
+    },
+    {
+      "name": "status_ready",
+      "value": "準備完了。SWF ファイルを選択して再生を開始"
+    },
+    {
+      "name": "status_reloading",
+      "value": "再読み込み中…"
+    },
+    {
+      "name": "no_movie",
+      "value": "SWF 未選択"
+    },
+    {
+      "name": "error_engine_init",
+      "value": "Ruffle エンジンを初期化できません"
+    },
+    {
+      "name": "error_refused_file",
+      "value": "ネイティブ層がこのファイルを拒否しました"
+    },
+    {
+      "name": "error_refused_url",
+      "value": "ネイティブ層がこのリンクを拒否しました"
+    },
+    {
+      "name": "error_no_context",
+      "value": "アプリのコンテキストを取得できません"
+    },
+    {
+      "name": "error_no_download_dir",
+      "value": "ダウンロードディレクトリにアクセスできません。権限を許可して再試行してください"
+    },
+    {
+      "name": "toast_movie_exited",
+      "value": "ムービーを終了しました"
+    },
+    {
+      "name": "toast_select_failed",
+      "value": "ファイルの選択に失敗しました: %s"
+    },
+    {
+      "name": "toast_save_failed",
+      "value": "ファイルの保存に失敗しました: %s"
+    },
+    {
+      "name": "toast_open_link_failed",
+      "value": "リンクを開けません: %s"
+    },
+    {
+      "name": "toast_group_required",
+      "value": "グループ名を入力してください"
+    },
+    {
+      "name": "toast_group_invalid",
+      "value": "グループ名が無効です"
+    },
+    {
+      "name": "toast_group_exists",
+      "value": "同名のグループが既に存在します"
+    },
+    {
+      "name": "toast_group_create_failed",
+      "value": "グループの作成に失敗しました: %s"
+    },
+    {
+      "name": "toast_group_created",
+      "value": "グループ「%s」を作成しました"
+    },
+    {
+      "name": "toast_group_rename_failed",
+      "value": "名前の変更に失敗しました: %s"
+    },
+    {
+      "name": "toast_group_renamed",
+      "value": "「%s」に名前を変更しました"
+    },
+    {
+      "name": "toast_move_exists",
+      "value": "移動先のグループに同名のファイルがあります"
+    },
+    {
+      "name": "toast_moved",
+      "value": "「%s」に移動しました"
+    },
+    {
+      "name": "toast_move_failed",
+      "value": "移動に失敗しました: %s"
+    },
+    {
+      "name": "toast_group_delete_failed",
+      "value": "グループの削除に失敗しました: %s"
+    },
+    {
+      "name": "toast_group_deleted",
+      "value": "グループを削除しました"
+    },
+    {
+      "name": "toast_import_failed",
+      "value": "インポートに失敗しました: %s"
+    },
+    {
+      "name": "toast_import_permission",
+      "value": "ライブラリへのインポートにはダウンロードディレクトリの権限が必要です"
+    },
+    {
+      "name": "toast_import_added",
+      "value": "%d 個のファイルを %s に追加しました"
+    },
+    {
+      "name": "toast_import_failed_count",
+      "value": "インポート失敗：%d 個のファイルを追加できませんでした"
+    },
+    {
+      "name": "toast_import_partial",
+      "value": "%d 個のファイルを追加し、%d 個失敗しました"
+    },
+    {
+      "name": "toast_library_removed",
+      "value": "ライブラリから削除しました"
+    },
+    {
+      "name": "toast_library_cleared",
+      "value": "ライブラリを空にしました"
+    },
+    {
+      "name": "toast_library_refreshed",
+      "value": "更新しました"
+    },
+    {
+      "name": "toast_file_missing_import",
+      "value": "ファイルにアクセスできません。再度インポートしてください"
+    },
+    {
+      "name": "toast_file_missing_open",
+      "value": "ファイルにアクセスできません。再度開いてください"
+    },
+    {
+      "name": "toast_url_invalid",
+      "value": "http:// または https:// で始まるリンクを入力してください"
+    },
+    {
+      "name": "toast_recent_removed",
+      "value": "最近開いた項目から削除しました"
+    },
+    {
+      "name": "toast_recents_cleared",
+      "value": "最近開いた項目を空にしました"
+    },
+    {
+      "name": "toast_link_copied",
+      "value": "リンクをコピーしました"
+    },
+    {
+      "name": "toast_license_read_failed",
+      "value": "ライセンスファイルを読み込めません"
+    },
+    {
+      "name": "toast_copied",
+      "value": "コピーしました"
+    },
+    {
+      "name": "toast_copy_failed",
+      "value": "コピーに失敗しました"
+    },
+    {
+      "name": "action_cancel",
+      "value": "キャンセル"
+    },
+    {
+      "name": "action_delete",
+      "value": "削除"
+    },
+    {
+      "name": "action_remove",
+      "value": "削除"
+    },
+    {
+      "name": "action_clear",
+      "value": "クリア"
+    },
+    {
+      "name": "action_confirm",
+      "value": "OK"
+    },
+    {
+      "name": "action_create",
+      "value": "作成"
+    },
+    {
+      "name": "dialog_delete_group",
+      "value": "グループを削除"
+    },
+    {
+      "name": "dialog_delete_group_msg",
+      "value": "グループ「%s」を削除しますか？グループ内の作品ファイル %d 個も一緒に削除されます。"
+    },
+    {
+      "name": "dialog_delete_empty_group_msg",
+      "value": "空のグループ「%s」を削除しますか？"
+    },
+    {
+      "name": "dialog_remove_work",
+      "value": "作品を削除"
+    },
+    {
+      "name": "dialog_remove_work_msg",
+      "value": "「%s」をライブラリから削除しますか？対応するファイルも一緒に削除されます。"
+    },
+    {
+      "name": "dialog_clear_library",
+      "value": "ライブラリを空にする"
+    },
+    {
+      "name": "dialog_clear_library_msg",
+      "value": "ライブラリを空にしますか？作品 %d 個%sも一緒に削除されます。"
+    },
+    {
+      "name": "dialog_groups_suffix",
+      "value": " とグループフォルダー %d 個"
+    },
+    {
+      "name": "dialog_remove_record",
+      "value": "履歴を削除"
+    },
+    {
+      "name": "dialog_remove_record_msg",
+      "value": "「%s」を最近開いた項目から削除しますか？"
+    },
+    {
+      "name": "dialog_clear_recents",
+      "value": "最近開いた項目を空にする"
+    },
+    {
+      "name": "dialog_clear_recents_msg",
+      "value": "履歴 %d 件をすべて削除しますか？"
+    },
+    {
+      "name": "library_title",
+      "value": "ライブラリ"
+    },
+    {
+      "name": "recents_title",
+      "value": "最近開いた項目"
+    },
+    {
+      "name": "lib_import",
+      "value": "インポート"
+    },
+    {
+      "name": "lib_new_group",
+      "value": "新規グループ"
+    },
+    {
+      "name": "lib_search",
+      "value": "検索"
+    },
+    {
+      "name": "lib_refresh",
+      "value": "更新"
+    },
+    {
+      "name": "lib_clear",
+      "value": "クリア"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "作品やグループを検索"
+    },
+    {
+      "name": "no_match",
+      "value": "一致する項目がありません"
+    },
+    {
+      "name": "no_works",
+      "value": "作品がありません。「新規グループ」または「インポート」から追加してください"
+    },
+    {
+      "name": "no_records",
+      "value": "履歴はありません"
+    },
+    {
+      "name": "group_default",
+      "value": "デフォルト"
+    },
+    {
+      "name": "group_quoted",
+      "value": "「%s」"
+    },
+    {
+      "name": "group_count",
+      "value": "%d 個"
+    },
+    {
+      "name": "group_rename_note",
+      "value": "名前を変更すると players 内のフォルダー名も変わりますが、中の作品は保持されます。"
+    },
+    {
+      "name": "group_create_note",
+      "value": "グループは players 内の同名サブフォルダーで、ファイルマネージャーから直接確認・管理できます。"
+    },
+    {
+      "name": "group_name_placeholder",
+      "value": "グループ名"
+    },
+    {
+      "name": "move_prompt",
+      "value": "「%s」の移動先："
+    },
+    {
+      "name": "move_no_groups",
+      "value": "グループがありません。ライブラリで「新規グループ」を押して作成してください。"
+    },
+    {
+      "name": "recent_link",
+      "value": "リンク"
+    },
+    {
+      "name": "recent_local",
+      "value": "ローカル"
+    },
+    {
+      "name": "ctx_delete",
+      "value": "削除"
+    },
+    {
+      "name": "ctx_import_to_group",
+      "value": "このグループにインポート"
+    },
+    {
+      "name": "ctx_rename",
+      "value": "名前を変更"
+    },
+    {
+      "name": "ctx_delete_group",
+      "value": "グループを削除"
+    },
+    {
+      "name": "ctx_open",
+      "value": "開く"
+    },
+    {
+      "name": "ctx_move_to_group",
+      "value": "グループに移動"
+    },
+    {
+      "name": "ctx_remove_from_library",
+      "value": "ライブラリから削除"
+    },
+    {
+      "name": "menu_open_swf",
+      "value": "SWF を開く"
+    },
+    {
+      "name": "menu_library",
+      "value": "ライブラリ"
+    },
+    {
+      "name": "menu_recents",
+      "value": "最近開いた項目"
+    },
+    {
+      "name": "menu_pause",
+      "value": "一時停止"
+    },
+    {
+      "name": "menu_resume",
+      "value": "再開"
+    },
+    {
+      "name": "menu_settings",
+      "value": "設定"
+    },
+    {
+      "name": "menu_fullscreen",
+      "value": "全画面"
+    },
+    {
+      "name": "home_select_hint",
+      "value": "SWF ファイルを選択して再生を開始"
+    },
+    {
+      "name": "home_auto_collect",
+      "value": "ライブラリは Download/RFulash/players 内のファイルを自動で収録します"
+    },
+    {
+      "name": "home_steps_title",
+      "value": "3 ステップで再生"
+    },
+    {
+      "name": "home_step1_title",
+      "value": "SWF を開く"
+    },
+    {
+      "name": "home_step1_desc",
+      "value": "ローカルの SWF ファイルを選ぶとすぐに再生できます"
+    },
+    {
+      "name": "home_step2_title",
+      "value": "ライブラリ"
+    },
+    {
+      "name": "home_step2_desc",
+      "value": "Download/RFulash/players 内のファイルを自動で収録します"
+    },
+    {
+      "name": "home_step3_title",
+      "value": "没入感のある再生"
+    },
+    {
+      "name": "home_step3_desc",
+      "value": "全画面、拡大縮小、キーボード・マウス操作をすべて搭載"
+    },
+    {
+      "name": "home_privacy",
+      "value": "すべてのファイルは端末内で処理され、ネットワークに送信されません"
+    },
+    {
+      "name": "home_hero_desc",
+      "value": "ネイティブ Ruffle エンジン搭載でブラウザ不要。ローカルの SWF ファイルを選ぶだけで、Flash をそのまま再生できます。"
+    },
+    {
+      "name": "a11y_open_swf_file",
+      "value": "SWF ファイルを開く"
+    },
+    {
+      "name": "keyboard_placeholder",
+      "value": "テキストを入力…"
+    },
+    {
+      "name": "picker_file",
+      "value": "ファイル"
+    },
+    {
+      "name": "picker_flash",
+      "value": "Flash アニメーション"
+    },
+    {
+      "name": "player_settings_title",
+      "value": "プレーヤー設定"
+    },
+    {
+      "name": "settings_basic_group",
+      "value": "基本とコア"
+    },
+    {
+      "name": "settings_look_group",
+      "value": "外観スタイル"
+    },
+    {
+      "name": "row_play_settings",
+      "value": "再生設定"
+    },
+    {
+      "name": "row_sound_settings",
+      "value": "サウンド"
+    },
+    {
+      "name": "row_picture_settings",
+      "value": "映像"
+    },
+    {
+      "name": "row_display_settings",
+      "value": "表示"
+    },
+    {
+      "name": "row_appearance_settings",
+      "value": "外観"
+    },
+    {
+      "name": "row_theme_settings",
+      "value": "テーマ"
+    },
+    {
+      "name": "row_glow",
+      "value": "イマーシブマテリアル"
+    },
+    {
+      "name": "row_language_settings",
+      "value": "言語"
+    },
+    {
+      "name": "row_about",
+      "value": "RFulash について"
+    },
+    {
+      "name": "player_reload",
+      "value": "再読み込み"
+    },
+    {
+      "name": "player_step_forward",
+      "value": "1 フレーム進む"
+    },
+    {
+      "name": "player_master_volume",
+      "value": "音量"
+    },
+    {
+      "name": "player_force_scale",
+      "value": "スケールモードを強制"
+    },
+    {
+      "name": "player_letterbox",
+      "value": "黒帯を表示（レターボックス）"
+    },
+    {
+      "name": "player_enter_fullscreen",
+      "value": "全画面にする"
+    },
+    {
+      "name": "player_exit_fullscreen",
+      "value": "全画面を終了"
+    },
+    {
+      "name": "a11y_back_player_settings",
+      "value": "プレーヤー設定に戻る"
+    },
+    {
+      "name": "quality_low",
+      "value": "低"
+    },
+    {
+      "name": "quality_medium",
+      "value": "中"
+    },
+    {
+      "name": "quality_high",
+      "value": "高"
+    },
+    {
+      "name": "quality_best",
+      "value": "最高"
+    },
+    {
+      "name": "scale_fit_window",
+      "value": "ウィンドウに合わせる"
+    },
+    {
+      "name": "scale_exact_fit",
+      "value": "正確に合わせる"
+    },
+    {
+      "name": "scale_fill_crop",
+      "value": "全体を埋めて切り抜き"
+    },
+    {
+      "name": "scale_original",
+      "value": "元のサイズ"
+    },
+    {
+      "name": "theme_follow_system",
+      "value": "システムに従う"
+    },
+    {
+      "name": "theme_light",
+      "value": "ライト"
+    },
+    {
+      "name": "theme_dark",
+      "value": "ダーク"
+    },
+    {
+      "name": "accent_orange",
+      "value": "オレンジ"
+    },
+    {
+      "name": "accent_blue",
+      "value": "ブルー"
+    },
+    {
+      "name": "accent_purple",
+      "value": "パープル"
+    },
+    {
+      "name": "accent_red",
+      "value": "レッド"
+    },
+    {
+      "name": "accent_teal",
+      "value": "ティール"
+    },
+    {
+      "name": "glow_soft",
+      "value": "ソフト"
+    },
+    {
+      "name": "glow_standard",
+      "value": "標準"
+    },
+    {
+      "name": "glow_clear",
+      "value": "クリア"
+    },
+    {
+      "name": "glow_hint_soft",
+      "value": "素材感が強く背景が落ち着き、明るい場所でも読みやすくなります"
+    },
+    {
+      "name": "glow_hint_standard",
+      "value": "透過性と読みやすさのバランスが取れたシステム既定の設定"
+    },
+    {
+      "name": "glow_hint_clear",
+      "value": "素材が最も薄く、背景が最も透けて見えます"
+    },
+    {
+      "name": "glow_note_supported",
+      "value": "フローティングタブバーとハーフモーダルパネルのマテリアルの厚みを調整します。変更はすぐに反映され、本機に保存されます。"
+    },
+    {
+      "name": "glow_note_unsupported",
+      "value": "このデバイスはシステムのイマーシブマテリアルに対応していません。設定は保存され、対応デバイスで反映されます。"
+    },
+    {
+      "name": "about_version",
+      "value": "バージョン"
+    },
+    {
+      "name": "about_developer",
+      "value": "開発者"
+    },
+    {
+      "name": "about_package",
+      "value": "パッケージ名"
+    },
+    {
+      "name": "about_website",
+      "value": "公式サイト"
+    },
+    {
+      "name": "about_email",
+      "value": "連絡先メール"
+    },
+    {
+      "name": "about_licenses",
+      "value": "オープンソースライセンス"
+    },
+    {
+      "name": "licenses_list_title",
+      "value": "ライセンス一覧"
+    },
+    {
+      "name": "licenses_section_projects",
+      "value": "プロジェクト名とリポジトリ"
+    },
+    {
+      "name": "licenses_section_third",
+      "value": "サードパーティコンポーネントとライセンス"
+    },
+    {
+      "name": "licenses_section_mit_sub",
+      "value": "Ruffle のデュアルライセンスのひとつ（MIT または Apache-2.0 を選択可能）"
+    },
+    {
+      "name": "licenses_section_apache_sub",
+      "value": "Ruffle のデュアルライセンスのもう一方"
+    },
+    {
+      "name": "licenses_section_third_sub",
+      "value": "Ruffle が依存するサードパーティライブラリの一覧とライセンス全文"
+    },
+    {
+      "name": "licenses_this_project",
+      "value": "本プロジェクト"
+    },
+    {
+      "name": "licenses_upstream_project",
+      "value": "上流プロジェクト"
+    },
+    {
+      "name": "licenses_components",
+      "value": "コンポーネントとバージョン"
+    },
+    {
+      "name": "licenses_copyright",
+      "value": "著作権表示"
+    },
+    {
+      "name": "licenses_full_text",
+      "value": "ライセンス全文"
+    },
+    {
+      "name": "licenses_note_label",
+      "value": "説明"
+    },
+    {
+      "name": "licenses_note_body",
+      "value": "上流の LICENSE.md には Ruffle のサードパーティコンポーネント一覧とライセンス全文が掲載されており、このファイルはアプリに同梱されています。上流の一覧に個別記載がないものの、本アプリのエンジンに組み込まれたコンポーネントは補足声明に記載しています。"
+    },
+    {
+      "name": "licenses_view_upstream",
+      "value": "上流の LICENSE.md 全文を表示"
+    },
+    {
+      "name": "licenses_view_supplement",
+      "value": "補足声明の全文を表示"
+    },
+    {
+      "name": "licenses_supplement_title",
+      "value": "サードパーティ補足声明"
+    },
+    {
+      "name": "licenses_supplement_sub",
+      "value": "上流の一覧に個別記載のないコンポーネントとライセンス"
+    },
+    {
+      "name": "licenses_upstream_sub",
+      "value": "上流リポジトリに同梱されたライセンスファイルの原文"
+    },
+    {
+      "name": "a11y_licenses_back",
+      "value": "ライセンス一覧に戻る"
+    },
+    {
+      "name": "a11y_about_back",
+      "value": "RFulash についてに戻る"
+    },
+    {
+      "name": "ruffle_components",
+      "value": "Ruffle %s（ruffle_core、ruffle_render_gles などの crate）"
+    },
+    {
+      "name": "language_settings_title",
+      "value": "言語"
+    },
+    {
+      "name": "language_system",
+      "value": "システムに従う"
+    },
+    {
+      "name": "language_zh",
+      "value": "简体中文"
+    },
+    {
+      "name": "language_zh_hant",
+      "value": "繁體中文"
+    },
+    {
+      "name": "language_ru",
+      "value": "Русский"
+    },
+    {
+      "name": "language_en",
+      "value": "English"
+    },
+    {
+      "name": "language_ja",
+      "value": "日本語"
+    },
+    {
+      "name": "language_ko",
+      "value": "한국어"
+    },
+    {
+      "name": "untitled_swf",
+      "value": "名称未設定"
+    }
+  ]
+}

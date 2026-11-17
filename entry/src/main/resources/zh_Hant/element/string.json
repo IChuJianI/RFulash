@@ -1,0 +1,804 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "基於 Ruffle 的鴻蒙原生 Flash 播放器"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "RFulash"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "RFulash"
+    },
+    {
+      "name": "permission_download_reason",
+      "value": "播放庫需要存取下載目錄，用於在「下載/com.52wfun.rfulash/players」資料夾中存放匯入的 SWF 檔案"
+    },
+    {
+      "name": "app_tagline",
+      "value": "鴻蒙原生 Flash 播放器"
+    },
+    {
+      "name": "home_title",
+      "value": "首頁"
+    },
+    {
+      "name": "tab_play",
+      "value": "播放"
+    },
+    {
+      "name": "about_title",
+      "value": "關於"
+    },
+    {
+      "name": "status_initializing",
+      "value": "正在初始化渲染器…"
+    },
+    {
+      "name": "status_load_failed",
+      "value": "載入失敗"
+    },
+    {
+      "name": "status_loading",
+      "value": "正在載入…"
+    },
+    {
+      "name": "status_ready",
+      "value": "就緒，選擇一個 SWF 檔案開始播放"
+    },
+    {
+      "name": "status_reloading",
+      "value": "正在重新載入…"
+    },
+    {
+      "name": "no_movie",
+      "value": "未開啟 SWF"
+    },
+    {
+      "name": "error_engine_init",
+      "value": "無法初始化 Ruffle 引擎"
+    },
+    {
+      "name": "error_refused_file",
+      "value": "原生層拒絕了這個檔案"
+    },
+    {
+      "name": "error_refused_url",
+      "value": "原生層拒絕了該連結"
+    },
+    {
+      "name": "error_no_context",
+      "value": "無法取得應用程式內容"
+    },
+    {
+      "name": "error_no_download_dir",
+      "value": "無法存取下載目錄，請授權後重試"
+    },
+    {
+      "name": "toast_movie_exited",
+      "value": "影片已退出"
+    },
+    {
+      "name": "toast_select_failed",
+      "value": "選擇檔案失敗: %s"
+    },
+    {
+      "name": "toast_save_failed",
+      "value": "儲存檔案失敗: %s"
+    },
+    {
+      "name": "toast_open_link_failed",
+      "value": "無法開啟連結: %s"
+    },
+    {
+      "name": "toast_group_required",
+      "value": "請輸入分組名稱"
+    },
+    {
+      "name": "toast_group_invalid",
+      "value": "分組名稱不合法"
+    },
+    {
+      "name": "toast_group_exists",
+      "value": "同名分組已存在"
+    },
+    {
+      "name": "toast_group_create_failed",
+      "value": "建立分組失敗: %s"
+    },
+    {
+      "name": "toast_group_created",
+      "value": "已建立分組「%s」"
+    },
+    {
+      "name": "toast_group_rename_failed",
+      "value": "重新命名失敗: %s"
+    },
+    {
+      "name": "toast_group_renamed",
+      "value": "已重新命名為「%s」"
+    },
+    {
+      "name": "toast_move_exists",
+      "value": "目標分組裡已有同名檔案"
+    },
+    {
+      "name": "toast_moved",
+      "value": "已移動到「%s」"
+    },
+    {
+      "name": "toast_move_failed",
+      "value": "移動失敗: %s"
+    },
+    {
+      "name": "toast_group_delete_failed",
+      "value": "刪除分組失敗: %s"
+    },
+    {
+      "name": "toast_group_deleted",
+      "value": "已刪除分組"
+    },
+    {
+      "name": "toast_import_failed",
+      "value": "匯入失敗: %s"
+    },
+    {
+      "name": "toast_import_permission",
+      "value": "需要下載目錄權限才能匯入播放庫"
+    },
+    {
+      "name": "toast_import_added",
+      "value": "已新增 %d 個檔案到%s"
+    },
+    {
+      "name": "toast_import_failed_count",
+      "value": "匯入失敗：%d 個檔案未能新增"
+    },
+    {
+      "name": "toast_import_partial",
+      "value": "已新增 %d 個檔案，%d 個失敗"
+    },
+    {
+      "name": "toast_library_removed",
+      "value": "已從播放庫移除"
+    },
+    {
+      "name": "toast_library_cleared",
+      "value": "已清空播放庫"
+    },
+    {
+      "name": "toast_library_refreshed",
+      "value": "已重新整理"
+    },
+    {
+      "name": "toast_file_missing_import",
+      "value": "檔案已無法存取，請重新匯入"
+    },
+    {
+      "name": "toast_file_missing_open",
+      "value": "檔案已無法存取，請重新開啟"
+    },
+    {
+      "name": "toast_url_invalid",
+      "value": "請輸入 http:// 或 https:// 連結"
+    },
+    {
+      "name": "toast_recent_removed",
+      "value": "已從最近開啟移除"
+    },
+    {
+      "name": "toast_recents_cleared",
+      "value": "已清空最近開啟"
+    },
+    {
+      "name": "toast_link_copied",
+      "value": "已複製連結"
+    },
+    {
+      "name": "toast_license_read_failed",
+      "value": "讀取授權檔案失敗"
+    },
+    {
+      "name": "toast_copied",
+      "value": "已複製"
+    },
+    {
+      "name": "toast_copy_failed",
+      "value": "複製失敗"
+    },
+    {
+      "name": "action_cancel",
+      "value": "取消"
+    },
+    {
+      "name": "action_delete",
+      "value": "刪除"
+    },
+    {
+      "name": "action_remove",
+      "value": "移除"
+    },
+    {
+      "name": "action_clear",
+      "value": "清空"
+    },
+    {
+      "name": "action_confirm",
+      "value": "確定"
+    },
+    {
+      "name": "action_create",
+      "value": "建立"
+    },
+    {
+      "name": "dialog_delete_group",
+      "value": "刪除分組"
+    },
+    {
+      "name": "dialog_delete_group_msg",
+      "value": "確定要刪除分組「%s」嗎？分組裡的 %d 個作品檔案也會一併刪除。"
+    },
+    {
+      "name": "dialog_delete_empty_group_msg",
+      "value": "確定要刪除空分組「%s」嗎？"
+    },
+    {
+      "name": "dialog_remove_work",
+      "value": "移除作品"
+    },
+    {
+      "name": "dialog_remove_work_msg",
+      "value": "確定要從播放庫中移除「%s」嗎？對應檔案也會一併刪除。"
+    },
+    {
+      "name": "dialog_clear_library",
+      "value": "清空播放庫"
+    },
+    {
+      "name": "dialog_clear_library_msg",
+      "value": "確定要清空播放庫嗎？%d 個作品%s會一併刪除。"
+    },
+    {
+      "name": "dialog_groups_suffix",
+      "value": "和 %d 個分組資料夾"
+    },
+    {
+      "name": "dialog_remove_record",
+      "value": "移除記錄"
+    },
+    {
+      "name": "dialog_remove_record_msg",
+      "value": "確定要從最近開啟中移除「%s」嗎？"
+    },
+    {
+      "name": "dialog_clear_recents",
+      "value": "清空最近開啟"
+    },
+    {
+      "name": "dialog_clear_recents_msg",
+      "value": "確定要清空全部 %d 條記錄嗎？"
+    },
+    {
+      "name": "library_title",
+      "value": "播放庫"
+    },
+    {
+      "name": "recents_title",
+      "value": "最近開啟"
+    },
+    {
+      "name": "lib_import",
+      "value": "匯入"
+    },
+    {
+      "name": "lib_new_group",
+      "value": "新增分組"
+    },
+    {
+      "name": "lib_search",
+      "value": "搜尋"
+    },
+    {
+      "name": "lib_refresh",
+      "value": "重新整理"
+    },
+    {
+      "name": "lib_clear",
+      "value": "清空"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "搜尋作品或分組"
+    },
+    {
+      "name": "no_match",
+      "value": "無符合結果"
+    },
+    {
+      "name": "no_works",
+      "value": "暫無作品，點擊「新增分組」或「匯入」新增"
+    },
+    {
+      "name": "no_records",
+      "value": "暫無記錄"
+    },
+    {
+      "name": "group_default",
+      "value": "預設"
+    },
+    {
+      "name": "group_quoted",
+      "value": "「%s」"
+    },
+    {
+      "name": "group_count",
+      "value": "%d 個"
+    },
+    {
+      "name": "group_rename_note",
+      "value": "重新命名會同步修改 players 裡的資料夾名稱，裡面的作品會保留。"
+    },
+    {
+      "name": "group_create_note",
+      "value": "分組就是 players 資料夾裡同名的子資料夾，可以在檔案管理員裡直接檢視和管理。"
+    },
+    {
+      "name": "group_name_placeholder",
+      "value": "分組名稱"
+    },
+    {
+      "name": "move_prompt",
+      "value": "將「%s」移動到："
+    },
+    {
+      "name": "move_no_groups",
+      "value": "還沒有分組，先在播放庫頁點「新增分組」建立一個。"
+    },
+    {
+      "name": "recent_link",
+      "value": "連結"
+    },
+    {
+      "name": "recent_local",
+      "value": "本機"
+    },
+    {
+      "name": "ctx_delete",
+      "value": "刪除"
+    },
+    {
+      "name": "ctx_import_to_group",
+      "value": "匯入到此分組"
+    },
+    {
+      "name": "ctx_rename",
+      "value": "重新命名"
+    },
+    {
+      "name": "ctx_delete_group",
+      "value": "刪除分組"
+    },
+    {
+      "name": "ctx_open",
+      "value": "開啟"
+    },
+    {
+      "name": "ctx_move_to_group",
+      "value": "移動到分組"
+    },
+    {
+      "name": "ctx_remove_from_library",
+      "value": "從播放庫移除"
+    },
+    {
+      "name": "menu_open_swf",
+      "value": "開啟 SWF"
+    },
+    {
+      "name": "menu_library",
+      "value": "播放庫"
+    },
+    {
+      "name": "menu_recents",
+      "value": "最近開啟"
+    },
+    {
+      "name": "menu_pause",
+      "value": "暫停"
+    },
+    {
+      "name": "menu_resume",
+      "value": "繼續"
+    },
+    {
+      "name": "menu_settings",
+      "value": "設定"
+    },
+    {
+      "name": "menu_fullscreen",
+      "value": "全螢幕"
+    },
+    {
+      "name": "home_select_hint",
+      "value": "選擇一個 SWF 檔案開始播放"
+    },
+    {
+      "name": "home_auto_collect",
+      "value": "播放庫會自動收錄「下載/RFulash/players」裡的檔案"
+    },
+    {
+      "name": "home_steps_title",
+      "value": "三步開始播放"
+    },
+    {
+      "name": "home_step1_title",
+      "value": "開啟 SWF"
+    },
+    {
+      "name": "home_step1_desc",
+      "value": "選擇本機 SWF 檔案，立即開始播放"
+    },
+    {
+      "name": "home_step2_title",
+      "value": "播放庫"
+    },
+    {
+      "name": "home_step2_desc",
+      "value": "自動收錄「下載/RFulash/players」裡的檔案"
+    },
+    {
+      "name": "home_step3_title",
+      "value": "沉浸播放"
+    },
+    {
+      "name": "home_step3_desc",
+      "value": "全螢幕、畫面縮放與鍵鼠操作一應俱全"
+    },
+    {
+      "name": "home_privacy",
+      "value": "所有檔案均在本機解析，不上傳網路"
+    },
+    {
+      "name": "home_hero_desc",
+      "value": "原生 Ruffle 引擎驅動，無需瀏覽器。選擇本機 SWF 檔案，即可獲得完整的 Flash 播放體驗。"
+    },
+    {
+      "name": "a11y_open_swf_file",
+      "value": "開啟 SWF 檔案"
+    },
+    {
+      "name": "keyboard_placeholder",
+      "value": "輸入文字…"
+    },
+    {
+      "name": "picker_file",
+      "value": "檔案"
+    },
+    {
+      "name": "picker_flash",
+      "value": "Flash 動畫"
+    },
+    {
+      "name": "player_settings_title",
+      "value": "播放器設定"
+    },
+    {
+      "name": "settings_basic_group",
+      "value": "基本與核心"
+    },
+    {
+      "name": "settings_look_group",
+      "value": "外觀風格"
+    },
+    {
+      "name": "row_play_settings",
+      "value": "播放設定"
+    },
+    {
+      "name": "row_sound_settings",
+      "value": "聲音設定"
+    },
+    {
+      "name": "row_picture_settings",
+      "value": "畫面設定"
+    },
+    {
+      "name": "row_display_settings",
+      "value": "顯示設定"
+    },
+    {
+      "name": "row_appearance_settings",
+      "value": "外觀設定"
+    },
+    {
+      "name": "row_theme_settings",
+      "value": "主題設定"
+    },
+    {
+      "name": "row_glow",
+      "value": "沉浸光感"
+    },
+    {
+      "name": "row_language_settings",
+      "value": "語言設定"
+    },
+    {
+      "name": "row_about",
+      "value": "關於 RFulash"
+    },
+    {
+      "name": "player_reload",
+      "value": "重新載入"
+    },
+    {
+      "name": "player_step_forward",
+      "value": "單步前進"
+    },
+    {
+      "name": "player_master_volume",
+      "value": "主音量"
+    },
+    {
+      "name": "player_force_scale",
+      "value": "強制縮放模式"
+    },
+    {
+      "name": "player_letterbox",
+      "value": "顯示黑邊（信箱模式）"
+    },
+    {
+      "name": "player_enter_fullscreen",
+      "value": "進入全螢幕"
+    },
+    {
+      "name": "player_exit_fullscreen",
+      "value": "退出全螢幕"
+    },
+    {
+      "name": "a11y_back_player_settings",
+      "value": "返回播放器設定"
+    },
+    {
+      "name": "quality_low",
+      "value": "低"
+    },
+    {
+      "name": "quality_medium",
+      "value": "中"
+    },
+    {
+      "name": "quality_high",
+      "value": "高"
+    },
+    {
+      "name": "quality_best",
+      "value": "最佳"
+    },
+    {
+      "name": "scale_fit_window",
+      "value": "適應視窗"
+    },
+    {
+      "name": "scale_exact_fit",
+      "value": "精確適配"
+    },
+    {
+      "name": "scale_fill_crop",
+      "value": "鋪滿裁切"
+    },
+    {
+      "name": "scale_original",
+      "value": "原始大小"
+    },
+    {
+      "name": "theme_follow_system",
+      "value": "跟隨系統"
+    },
+    {
+      "name": "theme_light",
+      "value": "淺色"
+    },
+    {
+      "name": "theme_dark",
+      "value": "深色"
+    },
+    {
+      "name": "accent_orange",
+      "value": "橘色"
+    },
+    {
+      "name": "accent_blue",
+      "value": "藍色"
+    },
+    {
+      "name": "accent_purple",
+      "value": "紫色"
+    },
+    {
+      "name": "accent_red",
+      "value": "紅色"
+    },
+    {
+      "name": "accent_teal",
+      "value": "青綠色"
+    },
+    {
+      "name": "glow_soft",
+      "value": "柔和"
+    },
+    {
+      "name": "glow_standard",
+      "value": "標準"
+    },
+    {
+      "name": "glow_clear",
+      "value": "通透"
+    },
+    {
+      "name": "glow_hint_soft",
+      "value": "材質更厚重，背景更安靜，強光下更易讀"
+    },
+    {
+      "name": "glow_hint_standard",
+      "value": "通透度與可讀性平衡，系統預設檔位"
+    },
+    {
+      "name": "glow_hint_clear",
+      "value": "材質最薄，背景內容透出最多"
+    },
+    {
+      "name": "glow_note_supported",
+      "value": "調整懸浮底欄和半模態面板的材質厚薄，修改後立即生效並保存在本機。"
+    },
+    {
+      "name": "glow_note_unsupported",
+      "value": "當前裝置不支援系統沉浸光感，設定會儲存並在支援的裝置上生效。"
+    },
+    {
+      "name": "about_version",
+      "value": "版本"
+    },
+    {
+      "name": "about_developer",
+      "value": "開發者"
+    },
+    {
+      "name": "about_package",
+      "value": "套件名稱"
+    },
+    {
+      "name": "about_website",
+      "value": "官網"
+    },
+    {
+      "name": "about_email",
+      "value": "聯絡信箱"
+    },
+    {
+      "name": "about_licenses",
+      "value": "開放原始碼授權"
+    },
+    {
+      "name": "licenses_list_title",
+      "value": "授權列表"
+    },
+    {
+      "name": "licenses_section_projects",
+      "value": "專案名稱與網址"
+    },
+    {
+      "name": "licenses_section_third",
+      "value": "第三方元件與授權"
+    },
+    {
+      "name": "licenses_section_mit_sub",
+      "value": "Ruffle 雙授權之一（MIT 或 Apache-2.0 任選）"
+    },
+    {
+      "name": "licenses_section_apache_sub",
+      "value": "Ruffle 雙授權的另一選項"
+    },
+    {
+      "name": "licenses_section_third_sub",
+      "value": "Ruffle 相依的第三方函式庫清單與授權全文"
+    },
+    {
+      "name": "licenses_this_project",
+      "value": "本專案"
+    },
+    {
+      "name": "licenses_upstream_project",
+      "value": "上游專案"
+    },
+    {
+      "name": "licenses_components",
+      "value": "元件與版本"
+    },
+    {
+      "name": "licenses_copyright",
+      "value": "版權聲明"
+    },
+    {
+      "name": "licenses_full_text",
+      "value": "授權全文"
+    },
+    {
+      "name": "licenses_note_label",
+      "value": "說明"
+    },
+    {
+      "name": "licenses_note_body",
+      "value": "上游 LICENSE.md 已列出 Ruffle 的第三方元件清單與授權全文，該檔案隨應用程式一併散布。未被上游清單單列、但已編譯進本應用程式引擎的元件，請見補充聲明。"
+    },
+    {
+      "name": "licenses_view_upstream",
+      "value": "檢視上游 LICENSE.md 全文"
+    },
+    {
+      "name": "licenses_view_supplement",
+      "value": "檢視補充聲明全文"
+    },
+    {
+      "name": "licenses_supplement_title",
+      "value": "第三方元件補充聲明"
+    },
+    {
+      "name": "licenses_supplement_sub",
+      "value": "上游清單未單列的元件與授權"
+    },
+    {
+      "name": "licenses_upstream_sub",
+      "value": "上游倉庫隨附的授權檔案原文"
+    },
+    {
+      "name": "a11y_licenses_back",
+      "value": "返回授權列表"
+    },
+    {
+      "name": "a11y_about_back",
+      "value": "返回關於 RFulash"
+    },
+    {
+      "name": "ruffle_components",
+      "value": "Ruffle %s（ruffle_core、ruffle_render_gles 等 crates）"
+    },
+    {
+      "name": "language_settings_title",
+      "value": "語言設定"
+    },
+    {
+      "name": "language_system",
+      "value": "跟隨系統"
+    },
+    {
+      "name": "language_zh",
+      "value": "简体中文"
+    },
+    {
+      "name": "language_zh_hant",
+      "value": "繁體中文"
+    },
+    {
+      "name": "language_ru",
+      "value": "Русский"
+    },
+    {
+      "name": "language_en",
+      "value": "English"
+    },
+    {
+      "name": "language_ja",
+      "value": "日本語"
+    },
+    {
+      "name": "language_ko",
+      "value": "한국어"
+    },
+    {
+      "name": "untitled_swf",
+      "value": "未命名 SWF"
+    }
+  ]
+}

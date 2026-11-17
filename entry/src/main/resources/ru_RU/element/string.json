@@ -1,0 +1,804 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Нативный Flash-плеер для HarmonyOS на основе Ruffle"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "RFulash"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "RFulash"
+    },
+    {
+      "name": "permission_download_reason",
+      "value": "Библиотеке нужен доступ к папке «Загрузки», чтобы хранить импортированные SWF-файлы в Download/com.52wfun.rfulash/players"
+    },
+    {
+      "name": "app_tagline",
+      "value": "Нативный Flash-плеер для HarmonyOS"
+    },
+    {
+      "name": "home_title",
+      "value": "Главная"
+    },
+    {
+      "name": "tab_play",
+      "value": "Воспроизведение"
+    },
+    {
+      "name": "about_title",
+      "value": "О приложении"
+    },
+    {
+      "name": "status_initializing",
+      "value": "Инициализация рендерера…"
+    },
+    {
+      "name": "status_load_failed",
+      "value": "Ошибка загрузки"
+    },
+    {
+      "name": "status_loading",
+      "value": "Загрузка…"
+    },
+    {
+      "name": "status_ready",
+      "value": "Готово. Выберите SWF-файл, чтобы начать"
+    },
+    {
+      "name": "status_reloading",
+      "value": "Перезагрузка…"
+    },
+    {
+      "name": "no_movie",
+      "value": "SWF не открыт"
+    },
+    {
+      "name": "error_engine_init",
+      "value": "Не удалось инициализировать движок Ruffle"
+    },
+    {
+      "name": "error_refused_file",
+      "value": "Нативный уровень отклонил этот файл"
+    },
+    {
+      "name": "error_refused_url",
+      "value": "Нативный уровень отклонил эту ссылку"
+    },
+    {
+      "name": "error_no_context",
+      "value": "Не удалось получить контекст приложения"
+    },
+    {
+      "name": "error_no_download_dir",
+      "value": "Нет доступа к папке «Загрузки». Разрешите доступ и повторите попытку"
+    },
+    {
+      "name": "toast_movie_exited",
+      "value": "Фильм закрыт"
+    },
+    {
+      "name": "toast_select_failed",
+      "value": "Не удалось выбрать файл: %s"
+    },
+    {
+      "name": "toast_save_failed",
+      "value": "Не удалось сохранить файл: %s"
+    },
+    {
+      "name": "toast_open_link_failed",
+      "value": "Не удалось открыть ссылку: %s"
+    },
+    {
+      "name": "toast_group_required",
+      "value": "Введите имя группы"
+    },
+    {
+      "name": "toast_group_invalid",
+      "value": "Недопустимое имя группы"
+    },
+    {
+      "name": "toast_group_exists",
+      "value": "Группа с таким именем уже существует"
+    },
+    {
+      "name": "toast_group_create_failed",
+      "value": "Не удалось создать группу: %s"
+    },
+    {
+      "name": "toast_group_created",
+      "value": "Группа «%s» создана"
+    },
+    {
+      "name": "toast_group_rename_failed",
+      "value": "Не удалось переименовать: %s"
+    },
+    {
+      "name": "toast_group_renamed",
+      "value": "Переименовано в «%s»"
+    },
+    {
+      "name": "toast_move_exists",
+      "value": "В целевой группе уже есть файл с таким именем"
+    },
+    {
+      "name": "toast_moved",
+      "value": "Перемещено в «%s»"
+    },
+    {
+      "name": "toast_move_failed",
+      "value": "Не удалось переместить: %s"
+    },
+    {
+      "name": "toast_group_delete_failed",
+      "value": "Не удалось удалить группу: %s"
+    },
+    {
+      "name": "toast_group_deleted",
+      "value": "Группа удалена"
+    },
+    {
+      "name": "toast_import_failed",
+      "value": "Не удалось импортировать: %s"
+    },
+    {
+      "name": "toast_import_permission",
+      "value": "Для импорта в библиотеку нужен доступ к папке «Загрузки»"
+    },
+    {
+      "name": "toast_import_added",
+      "value": "Добавлено файлов: %d → %s"
+    },
+    {
+      "name": "toast_import_failed_count",
+      "value": "Импорт не удался: не удалось добавить файлов: %d"
+    },
+    {
+      "name": "toast_import_partial",
+      "value": "Добавлено файлов: %d, не удалось: %d"
+    },
+    {
+      "name": "toast_library_removed",
+      "value": "Удалено из библиотеки"
+    },
+    {
+      "name": "toast_library_cleared",
+      "value": "Библиотека очищена"
+    },
+    {
+      "name": "toast_library_refreshed",
+      "value": "Обновлено"
+    },
+    {
+      "name": "toast_file_missing_import",
+      "value": "Файл больше недоступен. Импортируйте его снова"
+    },
+    {
+      "name": "toast_file_missing_open",
+      "value": "Файл больше недоступен. Откройте его снова"
+    },
+    {
+      "name": "toast_url_invalid",
+      "value": "Введите ссылку, начинающуюся с http:// или https://"
+    },
+    {
+      "name": "toast_recent_removed",
+      "value": "Удалено из недавних"
+    },
+    {
+      "name": "toast_recents_cleared",
+      "value": "Недавние очищены"
+    },
+    {
+      "name": "toast_link_copied",
+      "value": "Ссылка скопирована"
+    },
+    {
+      "name": "toast_license_read_failed",
+      "value": "Не удалось прочитать файл лицензии"
+    },
+    {
+      "name": "toast_copied",
+      "value": "Скопировано"
+    },
+    {
+      "name": "toast_copy_failed",
+      "value": "Не удалось скопировать"
+    },
+    {
+      "name": "action_cancel",
+      "value": "Отмена"
+    },
+    {
+      "name": "action_delete",
+      "value": "Удалить"
+    },
+    {
+      "name": "action_remove",
+      "value": "Убрать"
+    },
+    {
+      "name": "action_clear",
+      "value": "Очистить"
+    },
+    {
+      "name": "action_confirm",
+      "value": "ОК"
+    },
+    {
+      "name": "action_create",
+      "value": "Создать"
+    },
+    {
+      "name": "dialog_delete_group",
+      "value": "Удалить группу"
+    },
+    {
+      "name": "dialog_delete_group_msg",
+      "value": "Удалить группу «%s»? Все файлы фильмов в ней (%d) также будут удалены."
+    },
+    {
+      "name": "dialog_delete_empty_group_msg",
+      "value": "Удалить пустую группу «%s»?"
+    },
+    {
+      "name": "dialog_remove_work",
+      "value": "Убрать фильм"
+    },
+    {
+      "name": "dialog_remove_work_msg",
+      "value": "Убрать «%s» из библиотеки? Соответствующий файл также будет удалён."
+    },
+    {
+      "name": "dialog_clear_library",
+      "value": "Очистить библиотеку"
+    },
+    {
+      "name": "dialog_clear_library_msg",
+      "value": "Очистить библиотеку? Все фильмы (%d)%s также будут удалены."
+    },
+    {
+      "name": "dialog_groups_suffix",
+      "value": " и папок групп: %d"
+    },
+    {
+      "name": "dialog_remove_record",
+      "value": "Убрать запись"
+    },
+    {
+      "name": "dialog_remove_record_msg",
+      "value": "Убрать «%s» из недавних?"
+    },
+    {
+      "name": "dialog_clear_recents",
+      "value": "Очистить недавние"
+    },
+    {
+      "name": "dialog_clear_recents_msg",
+      "value": "Очистить все записи (%d)?"
+    },
+    {
+      "name": "library_title",
+      "value": "Библиотека"
+    },
+    {
+      "name": "recents_title",
+      "value": "Недавние"
+    },
+    {
+      "name": "lib_import",
+      "value": "Импорт"
+    },
+    {
+      "name": "lib_new_group",
+      "value": "Новая группа"
+    },
+    {
+      "name": "lib_search",
+      "value": "Поиск"
+    },
+    {
+      "name": "lib_refresh",
+      "value": "Обновить"
+    },
+    {
+      "name": "lib_clear",
+      "value": "Очистить"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "Поиск фильмов и групп"
+    },
+    {
+      "name": "no_match",
+      "value": "Ничего не найдено"
+    },
+    {
+      "name": "no_works",
+      "value": "Пока нет фильмов. Нажмите «Новая группа» или «Импорт», чтобы добавить"
+    },
+    {
+      "name": "no_records",
+      "value": "Пока нет записей"
+    },
+    {
+      "name": "group_default",
+      "value": "По умолчанию"
+    },
+    {
+      "name": "group_quoted",
+      "value": "«%s»"
+    },
+    {
+      "name": "group_count",
+      "value": "%d"
+    },
+    {
+      "name": "group_rename_note",
+      "value": "При переименовании меняется имя папки в players, фильмы внутри сохраняются."
+    },
+    {
+      "name": "group_create_note",
+      "value": "Группа — это одноимённая подпапка в players; её можно просматривать и изменять в файловом менеджере."
+    },
+    {
+      "name": "group_name_placeholder",
+      "value": "Имя группы"
+    },
+    {
+      "name": "move_prompt",
+      "value": "Переместить «%s» в:"
+    },
+    {
+      "name": "move_no_groups",
+      "value": "Групп пока нет. Создайте её кнопкой «Новая группа» в библиотеке."
+    },
+    {
+      "name": "recent_link",
+      "value": "Ссылка"
+    },
+    {
+      "name": "recent_local",
+      "value": "Локальный"
+    },
+    {
+      "name": "ctx_delete",
+      "value": "Удалить"
+    },
+    {
+      "name": "ctx_import_to_group",
+      "value": "Импорт в эту группу"
+    },
+    {
+      "name": "ctx_rename",
+      "value": "Переименовать"
+    },
+    {
+      "name": "ctx_delete_group",
+      "value": "Удалить группу"
+    },
+    {
+      "name": "ctx_open",
+      "value": "Открыть"
+    },
+    {
+      "name": "ctx_move_to_group",
+      "value": "Переместить в группу"
+    },
+    {
+      "name": "ctx_remove_from_library",
+      "value": "Убрать из библиотеки"
+    },
+    {
+      "name": "menu_open_swf",
+      "value": "Открыть SWF"
+    },
+    {
+      "name": "menu_library",
+      "value": "Библиотека"
+    },
+    {
+      "name": "menu_recents",
+      "value": "Недавние"
+    },
+    {
+      "name": "menu_pause",
+      "value": "Пауза"
+    },
+    {
+      "name": "menu_resume",
+      "value": "Продолжить"
+    },
+    {
+      "name": "menu_settings",
+      "value": "Настройки"
+    },
+    {
+      "name": "menu_fullscreen",
+      "value": "Полный экран"
+    },
+    {
+      "name": "home_select_hint",
+      "value": "Выберите SWF-файл, чтобы начать"
+    },
+    {
+      "name": "home_auto_collect",
+      "value": "Библиотека автоматически собирает файлы из Download/RFulash/players"
+    },
+    {
+      "name": "home_steps_title",
+      "value": "Три шага к воспроизведению"
+    },
+    {
+      "name": "home_step1_title",
+      "value": "Открыть SWF"
+    },
+    {
+      "name": "home_step1_desc",
+      "value": "Выберите локальный SWF-файл и сразу начинайте воспроизведение"
+    },
+    {
+      "name": "home_step2_title",
+      "value": "Библиотека"
+    },
+    {
+      "name": "home_step2_desc",
+      "value": "Автоматически собирает файлы из Download/RFulash/players"
+    },
+    {
+      "name": "home_step3_title",
+      "value": "Иммерсивное воспроизведение"
+    },
+    {
+      "name": "home_step3_desc",
+      "value": "Полный экран, масштабирование и управление клавиатурой и мышью"
+    },
+    {
+      "name": "home_privacy",
+      "value": "Все файлы обрабатываются локально и никуда не отправляются"
+    },
+    {
+      "name": "home_hero_desc",
+      "value": "Работает на нативном движке Ruffle — браузер не нужен. Выберите локальный SWF-файл и получите полноценное воспроизведение Flash."
+    },
+    {
+      "name": "a11y_open_swf_file",
+      "value": "Открыть SWF-файл"
+    },
+    {
+      "name": "keyboard_placeholder",
+      "value": "Введите текст…"
+    },
+    {
+      "name": "picker_file",
+      "value": "Файл"
+    },
+    {
+      "name": "picker_flash",
+      "value": "Flash-анимация"
+    },
+    {
+      "name": "player_settings_title",
+      "value": "Настройки плеера"
+    },
+    {
+      "name": "settings_basic_group",
+      "value": "Основные настройки"
+    },
+    {
+      "name": "settings_look_group",
+      "value": "Внешний вид"
+    },
+    {
+      "name": "row_play_settings",
+      "value": "Воспроизведение"
+    },
+    {
+      "name": "row_sound_settings",
+      "value": "Звук"
+    },
+    {
+      "name": "row_picture_settings",
+      "value": "Изображение"
+    },
+    {
+      "name": "row_display_settings",
+      "value": "Экран"
+    },
+    {
+      "name": "row_appearance_settings",
+      "value": "Оформление"
+    },
+    {
+      "name": "row_theme_settings",
+      "value": "Тема"
+    },
+    {
+      "name": "row_glow",
+      "value": "Иммерсивный материал"
+    },
+    {
+      "name": "row_language_settings",
+      "value": "Язык"
+    },
+    {
+      "name": "row_about",
+      "value": "О приложении RFulash"
+    },
+    {
+      "name": "player_reload",
+      "value": "Перезагрузить"
+    },
+    {
+      "name": "player_step_forward",
+      "value": "Шаг вперёд"
+    },
+    {
+      "name": "player_master_volume",
+      "value": "Громкость"
+    },
+    {
+      "name": "player_force_scale",
+      "value": "Принудительный режим масштаба"
+    },
+    {
+      "name": "player_letterbox",
+      "value": "Показывать чёрные полосы (letterbox)"
+    },
+    {
+      "name": "player_enter_fullscreen",
+      "value": "Полноэкранный режим"
+    },
+    {
+      "name": "player_exit_fullscreen",
+      "value": "Выйти из полноэкранного режима"
+    },
+    {
+      "name": "a11y_back_player_settings",
+      "value": "Назад к настройкам плеера"
+    },
+    {
+      "name": "quality_low",
+      "value": "Низкое"
+    },
+    {
+      "name": "quality_medium",
+      "value": "Среднее"
+    },
+    {
+      "name": "quality_high",
+      "value": "Высокое"
+    },
+    {
+      "name": "quality_best",
+      "value": "Наилучшее"
+    },
+    {
+      "name": "scale_fit_window",
+      "value": "По размеру окна"
+    },
+    {
+      "name": "scale_exact_fit",
+      "value": "Точная подгонка"
+    },
+    {
+      "name": "scale_fill_crop",
+      "value": "Заполнить с обрезкой"
+    },
+    {
+      "name": "scale_original",
+      "value": "Исходный размер"
+    },
+    {
+      "name": "theme_follow_system",
+      "value": "Как в системе"
+    },
+    {
+      "name": "theme_light",
+      "value": "Светлая"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Тёмная"
+    },
+    {
+      "name": "accent_orange",
+      "value": "Оранжевый"
+    },
+    {
+      "name": "accent_blue",
+      "value": "Синий"
+    },
+    {
+      "name": "accent_purple",
+      "value": "Фиолетовый"
+    },
+    {
+      "name": "accent_red",
+      "value": "Красный"
+    },
+    {
+      "name": "accent_teal",
+      "value": "Бирюзовый"
+    },
+    {
+      "name": "glow_soft",
+      "value": "Мягкий"
+    },
+    {
+      "name": "glow_standard",
+      "value": "Стандартный"
+    },
+    {
+      "name": "glow_clear",
+      "value": "Прозрачный"
+    },
+    {
+      "name": "glow_hint_soft",
+      "value": "Более плотный материал, спокойный фон, лучше читается при ярком свете"
+    },
+    {
+      "name": "glow_hint_standard",
+      "value": "Баланс прозрачности и читаемости, системное значение по умолчанию"
+    },
+    {
+      "name": "glow_hint_clear",
+      "value": "Самый тонкий материал, фон просвечивает сильнее всего"
+    },
+    {
+      "name": "glow_note_supported",
+      "value": "Настраивает плотность материала плавающей панели вкладок и полумодальных панелей. Изменения применяются сразу и сохраняются на устройстве."
+    },
+    {
+      "name": "glow_note_unsupported",
+      "value": "Это устройство не поддерживает системный иммерсивный материал. Настройка сохранена и применится на поддерживаемых устройствах."
+    },
+    {
+      "name": "about_version",
+      "value": "Версия"
+    },
+    {
+      "name": "about_developer",
+      "value": "Разработчик"
+    },
+    {
+      "name": "about_package",
+      "value": "Имя пакета"
+    },
+    {
+      "name": "about_website",
+      "value": "Сайт"
+    },
+    {
+      "name": "about_email",
+      "value": "Почта"
+    },
+    {
+      "name": "about_licenses",
+      "value": "Лицензии с открытым кодом"
+    },
+    {
+      "name": "licenses_list_title",
+      "value": "Список лицензий"
+    },
+    {
+      "name": "licenses_section_projects",
+      "value": "Названия проектов и репозитории"
+    },
+    {
+      "name": "licenses_section_third",
+      "value": "Сторонние компоненты и лицензии"
+    },
+    {
+      "name": "licenses_section_mit_sub",
+      "value": "Одна из двух лицензий Ruffle (MIT или Apache-2.0 на выбор)"
+    },
+    {
+      "name": "licenses_section_apache_sub",
+      "value": "Другая лицензия Ruffle на выбор"
+    },
+    {
+      "name": "licenses_section_third_sub",
+      "value": "Сторонние библиотеки Ruffle и полные тексты лицензий"
+    },
+    {
+      "name": "licenses_this_project",
+      "value": "Этот проект"
+    },
+    {
+      "name": "licenses_upstream_project",
+      "value": "Upstream-проект"
+    },
+    {
+      "name": "licenses_components",
+      "value": "Компонент и версия"
+    },
+    {
+      "name": "licenses_copyright",
+      "value": "Уведомление об авторских правах"
+    },
+    {
+      "name": "licenses_full_text",
+      "value": "Полный текст лицензии"
+    },
+    {
+      "name": "licenses_note_label",
+      "value": "Примечание"
+    },
+    {
+      "name": "licenses_note_body",
+      "value": "В LICENSE.md из upstream-репозитория перечислены сторонние компоненты Ruffle и полные тексты лицензий; этот файл поставляется вместе с приложением. Компоненты, скомпилированные в движок приложения, но не указанные в upstream-списке отдельно, описаны в дополнительном уведомлении."
+    },
+    {
+      "name": "licenses_view_upstream",
+      "value": "Открыть полный LICENSE.md из upstream"
+    },
+    {
+      "name": "licenses_view_supplement",
+      "value": "Открыть полное дополнительное уведомление"
+    },
+    {
+      "name": "licenses_supplement_title",
+      "value": "Дополнительное уведомление о сторонних компонентах"
+    },
+    {
+      "name": "licenses_supplement_sub",
+      "value": "Компоненты, не указанные отдельно в upstream, и их лицензии"
+    },
+    {
+      "name": "licenses_upstream_sub",
+      "value": "Файл лицензии, поставляемый с upstream-репозиторием"
+    },
+    {
+      "name": "a11y_licenses_back",
+      "value": "Назад к списку лицензий"
+    },
+    {
+      "name": "a11y_about_back",
+      "value": "Назад к «О приложении RFulash»"
+    },
+    {
+      "name": "ruffle_components",
+      "value": "Ruffle %s (crates ruffle_core, ruffle_render_gles и др.)"
+    },
+    {
+      "name": "language_settings_title",
+      "value": "Язык"
+    },
+    {
+      "name": "language_system",
+      "value": "Как в системе"
+    },
+    {
+      "name": "language_zh",
+      "value": "简体中文"
+    },
+    {
+      "name": "language_zh_hant",
+      "value": "繁體中文"
+    },
+    {
+      "name": "language_ru",
+      "value": "Русский"
+    },
+    {
+      "name": "language_en",
+      "value": "English"
+    },
+    {
+      "name": "language_ja",
+      "value": "日本語"
+    },
+    {
+      "name": "language_ko",
+      "value": "한국어"
+    },
+    {
+      "name": "untitled_swf",
+      "value": "Без имени"
+    }
+  ]
+}

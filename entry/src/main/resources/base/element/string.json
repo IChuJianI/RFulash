@@ -1,0 +1,804 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Native Flash player for HarmonyOS powered by Ruffle"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "RFulash"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "RFulash"
+    },
+    {
+      "name": "permission_download_reason",
+      "value": "The library needs access to Downloads to store imported SWF files in Download/com.52wfun.rfulash/players"
+    },
+    {
+      "name": "app_tagline",
+      "value": "Native Flash player for HarmonyOS"
+    },
+    {
+      "name": "home_title",
+      "value": "Home"
+    },
+    {
+      "name": "tab_play",
+      "value": "Play"
+    },
+    {
+      "name": "about_title",
+      "value": "About"
+    },
+    {
+      "name": "status_initializing",
+      "value": "Initializing renderer…"
+    },
+    {
+      "name": "status_load_failed",
+      "value": "Load failed"
+    },
+    {
+      "name": "status_loading",
+      "value": "Loading…"
+    },
+    {
+      "name": "status_ready",
+      "value": "Ready. Select a SWF file to start playing"
+    },
+    {
+      "name": "status_reloading",
+      "value": "Reloading…"
+    },
+    {
+      "name": "no_movie",
+      "value": "No SWF open"
+    },
+    {
+      "name": "error_engine_init",
+      "value": "Cannot initialize the Ruffle engine"
+    },
+    {
+      "name": "error_refused_file",
+      "value": "The native layer rejected this file"
+    },
+    {
+      "name": "error_refused_url",
+      "value": "The native layer rejected this link"
+    },
+    {
+      "name": "error_no_context",
+      "value": "Cannot access the app context"
+    },
+    {
+      "name": "error_no_download_dir",
+      "value": "Cannot access Downloads. Grant permission and try again"
+    },
+    {
+      "name": "toast_movie_exited",
+      "value": "Movie exited"
+    },
+    {
+      "name": "toast_select_failed",
+      "value": "Could not select the file: %s"
+    },
+    {
+      "name": "toast_save_failed",
+      "value": "Could not save the file: %s"
+    },
+    {
+      "name": "toast_open_link_failed",
+      "value": "Could not open the link: %s"
+    },
+    {
+      "name": "toast_group_required",
+      "value": "Enter a group name"
+    },
+    {
+      "name": "toast_group_invalid",
+      "value": "Invalid group name"
+    },
+    {
+      "name": "toast_group_exists",
+      "value": "A group with this name already exists"
+    },
+    {
+      "name": "toast_group_create_failed",
+      "value": "Could not create the group: %s"
+    },
+    {
+      "name": "toast_group_created",
+      "value": "Group “%s” created"
+    },
+    {
+      "name": "toast_group_rename_failed",
+      "value": "Rename failed: %s"
+    },
+    {
+      "name": "toast_group_renamed",
+      "value": "Renamed to “%s”"
+    },
+    {
+      "name": "toast_move_exists",
+      "value": "The target group already contains a file with this name"
+    },
+    {
+      "name": "toast_moved",
+      "value": "Moved to “%s”"
+    },
+    {
+      "name": "toast_move_failed",
+      "value": "Move failed: %s"
+    },
+    {
+      "name": "toast_group_delete_failed",
+      "value": "Could not delete the group: %s"
+    },
+    {
+      "name": "toast_group_deleted",
+      "value": "Group deleted"
+    },
+    {
+      "name": "toast_import_failed",
+      "value": "Import failed: %s"
+    },
+    {
+      "name": "toast_import_permission",
+      "value": "Downloads permission is required to import into the library"
+    },
+    {
+      "name": "toast_import_added",
+      "value": "Added %d file(s) to %s"
+    },
+    {
+      "name": "toast_import_failed_count",
+      "value": "Import failed: %d file(s) could not be added"
+    },
+    {
+      "name": "toast_import_partial",
+      "value": "Added %d file(s), %d failed"
+    },
+    {
+      "name": "toast_library_removed",
+      "value": "Removed from the library"
+    },
+    {
+      "name": "toast_library_cleared",
+      "value": "Library cleared"
+    },
+    {
+      "name": "toast_library_refreshed",
+      "value": "Refreshed"
+    },
+    {
+      "name": "toast_file_missing_import",
+      "value": "The file is no longer accessible. Import it again"
+    },
+    {
+      "name": "toast_file_missing_open",
+      "value": "The file is no longer accessible. Open it again"
+    },
+    {
+      "name": "toast_url_invalid",
+      "value": "Enter a link starting with http:// or https://"
+    },
+    {
+      "name": "toast_recent_removed",
+      "value": "Removed from Recent"
+    },
+    {
+      "name": "toast_recents_cleared",
+      "value": "Recent cleared"
+    },
+    {
+      "name": "toast_link_copied",
+      "value": "Link copied"
+    },
+    {
+      "name": "toast_license_read_failed",
+      "value": "Could not read the license file"
+    },
+    {
+      "name": "toast_copied",
+      "value": "Copied"
+    },
+    {
+      "name": "toast_copy_failed",
+      "value": "Copy failed"
+    },
+    {
+      "name": "action_cancel",
+      "value": "Cancel"
+    },
+    {
+      "name": "action_delete",
+      "value": "Delete"
+    },
+    {
+      "name": "action_remove",
+      "value": "Remove"
+    },
+    {
+      "name": "action_clear",
+      "value": "Clear"
+    },
+    {
+      "name": "action_confirm",
+      "value": "OK"
+    },
+    {
+      "name": "action_create",
+      "value": "Create"
+    },
+    {
+      "name": "dialog_delete_group",
+      "value": "Delete group"
+    },
+    {
+      "name": "dialog_delete_group_msg",
+      "value": "Delete group “%s”? The %d movie file(s) in it will also be deleted."
+    },
+    {
+      "name": "dialog_delete_empty_group_msg",
+      "value": "Delete the empty group “%s”?"
+    },
+    {
+      "name": "dialog_remove_work",
+      "value": "Remove movie"
+    },
+    {
+      "name": "dialog_remove_work_msg",
+      "value": "Remove “%s” from the library? Its file will also be deleted."
+    },
+    {
+      "name": "dialog_clear_library",
+      "value": "Clear library"
+    },
+    {
+      "name": "dialog_clear_library_msg",
+      "value": "Clear the library? %d movie(s)%s will also be deleted."
+    },
+    {
+      "name": "dialog_groups_suffix",
+      "value": " and %d group folder(s)"
+    },
+    {
+      "name": "dialog_remove_record",
+      "value": "Remove entry"
+    },
+    {
+      "name": "dialog_remove_record_msg",
+      "value": "Remove “%s” from Recent?"
+    },
+    {
+      "name": "dialog_clear_recents",
+      "value": "Clear Recent"
+    },
+    {
+      "name": "dialog_clear_recents_msg",
+      "value": "Clear all %d entries?"
+    },
+    {
+      "name": "library_title",
+      "value": "Library"
+    },
+    {
+      "name": "recents_title",
+      "value": "Recent"
+    },
+    {
+      "name": "lib_import",
+      "value": "Import"
+    },
+    {
+      "name": "lib_new_group",
+      "value": "New group"
+    },
+    {
+      "name": "lib_search",
+      "value": "Search"
+    },
+    {
+      "name": "lib_refresh",
+      "value": "Refresh"
+    },
+    {
+      "name": "lib_clear",
+      "value": "Clear"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "Search movies or groups"
+    },
+    {
+      "name": "no_match",
+      "value": "No matches"
+    },
+    {
+      "name": "no_works",
+      "value": "No movies yet. Tap “New group” or “Import” to add some"
+    },
+    {
+      "name": "no_records",
+      "value": "No entries"
+    },
+    {
+      "name": "group_default",
+      "value": "Default"
+    },
+    {
+      "name": "group_quoted",
+      "value": "“%s”"
+    },
+    {
+      "name": "group_count",
+      "value": "%d"
+    },
+    {
+      "name": "group_rename_note",
+      "value": "Renaming also changes the folder name in players; the movies inside are kept."
+    },
+    {
+      "name": "group_create_note",
+      "value": "A group is a same-named subfolder in players, visible and manageable in File Manager."
+    },
+    {
+      "name": "group_name_placeholder",
+      "value": "Group name"
+    },
+    {
+      "name": "move_prompt",
+      "value": "Move “%s” to:"
+    },
+    {
+      "name": "move_no_groups",
+      "value": "No groups yet. Create one with “New group” in the library."
+    },
+    {
+      "name": "recent_link",
+      "value": "Link"
+    },
+    {
+      "name": "recent_local",
+      "value": "Local"
+    },
+    {
+      "name": "ctx_delete",
+      "value": "Delete"
+    },
+    {
+      "name": "ctx_import_to_group",
+      "value": "Import to this group"
+    },
+    {
+      "name": "ctx_rename",
+      "value": "Rename"
+    },
+    {
+      "name": "ctx_delete_group",
+      "value": "Delete group"
+    },
+    {
+      "name": "ctx_open",
+      "value": "Open"
+    },
+    {
+      "name": "ctx_move_to_group",
+      "value": "Move to group"
+    },
+    {
+      "name": "ctx_remove_from_library",
+      "value": "Remove from library"
+    },
+    {
+      "name": "menu_open_swf",
+      "value": "Open SWF"
+    },
+    {
+      "name": "menu_library",
+      "value": "Library"
+    },
+    {
+      "name": "menu_recents",
+      "value": "Recent"
+    },
+    {
+      "name": "menu_pause",
+      "value": "Pause"
+    },
+    {
+      "name": "menu_resume",
+      "value": "Resume"
+    },
+    {
+      "name": "menu_settings",
+      "value": "Settings"
+    },
+    {
+      "name": "menu_fullscreen",
+      "value": "Fullscreen"
+    },
+    {
+      "name": "home_select_hint",
+      "value": "Select a SWF file to start playing"
+    },
+    {
+      "name": "home_auto_collect",
+      "value": "The library automatically collects files in Download/RFulash/players"
+    },
+    {
+      "name": "home_steps_title",
+      "value": "Three steps to play"
+    },
+    {
+      "name": "home_step1_title",
+      "value": "Open SWF"
+    },
+    {
+      "name": "home_step1_desc",
+      "value": "Pick a local SWF file and start playing immediately"
+    },
+    {
+      "name": "home_step2_title",
+      "value": "Library"
+    },
+    {
+      "name": "home_step2_desc",
+      "value": "Automatically collects files in Download/RFulash/players"
+    },
+    {
+      "name": "home_step3_title",
+      "value": "Immersive playback"
+    },
+    {
+      "name": "home_step3_desc",
+      "value": "Fullscreen, scaling and keyboard/mouse control included"
+    },
+    {
+      "name": "home_privacy",
+      "value": "All files are parsed locally and never uploaded"
+    },
+    {
+      "name": "home_hero_desc",
+      "value": "Powered by the native Ruffle engine, no browser needed. Pick a local SWF file and get the full Flash experience."
+    },
+    {
+      "name": "a11y_open_swf_file",
+      "value": "Open SWF file"
+    },
+    {
+      "name": "keyboard_placeholder",
+      "value": "Enter text…"
+    },
+    {
+      "name": "picker_file",
+      "value": "File"
+    },
+    {
+      "name": "picker_flash",
+      "value": "Flash movie"
+    },
+    {
+      "name": "player_settings_title",
+      "value": "Player settings"
+    },
+    {
+      "name": "settings_basic_group",
+      "value": "Basics & core"
+    },
+    {
+      "name": "settings_look_group",
+      "value": "Appearance"
+    },
+    {
+      "name": "row_play_settings",
+      "value": "Playback"
+    },
+    {
+      "name": "row_sound_settings",
+      "value": "Sound"
+    },
+    {
+      "name": "row_picture_settings",
+      "value": "Picture"
+    },
+    {
+      "name": "row_display_settings",
+      "value": "Display"
+    },
+    {
+      "name": "row_appearance_settings",
+      "value": "Appearance"
+    },
+    {
+      "name": "row_theme_settings",
+      "value": "Theme"
+    },
+    {
+      "name": "row_glow",
+      "value": "Immersive material"
+    },
+    {
+      "name": "row_language_settings",
+      "value": "Language"
+    },
+    {
+      "name": "row_about",
+      "value": "About RFulash"
+    },
+    {
+      "name": "player_reload",
+      "value": "Reload"
+    },
+    {
+      "name": "player_step_forward",
+      "value": "Step forward"
+    },
+    {
+      "name": "player_master_volume",
+      "value": "Volume"
+    },
+    {
+      "name": "player_force_scale",
+      "value": "Force scale mode"
+    },
+    {
+      "name": "player_letterbox",
+      "value": "Show black bars (letterbox)"
+    },
+    {
+      "name": "player_enter_fullscreen",
+      "value": "Enter fullscreen"
+    },
+    {
+      "name": "player_exit_fullscreen",
+      "value": "Exit fullscreen"
+    },
+    {
+      "name": "a11y_back_player_settings",
+      "value": "Back to player settings"
+    },
+    {
+      "name": "quality_low",
+      "value": "Low"
+    },
+    {
+      "name": "quality_medium",
+      "value": "Medium"
+    },
+    {
+      "name": "quality_high",
+      "value": "High"
+    },
+    {
+      "name": "quality_best",
+      "value": "Best"
+    },
+    {
+      "name": "scale_fit_window",
+      "value": "Fit to window"
+    },
+    {
+      "name": "scale_exact_fit",
+      "value": "Exact fit"
+    },
+    {
+      "name": "scale_fill_crop",
+      "value": "Fill and crop"
+    },
+    {
+      "name": "scale_original",
+      "value": "Original size"
+    },
+    {
+      "name": "theme_follow_system",
+      "value": "Follow system"
+    },
+    {
+      "name": "theme_light",
+      "value": "Light"
+    },
+    {
+      "name": "theme_dark",
+      "value": "Dark"
+    },
+    {
+      "name": "accent_orange",
+      "value": "Orange"
+    },
+    {
+      "name": "accent_blue",
+      "value": "Blue"
+    },
+    {
+      "name": "accent_purple",
+      "value": "Purple"
+    },
+    {
+      "name": "accent_red",
+      "value": "Red"
+    },
+    {
+      "name": "accent_teal",
+      "value": "Teal"
+    },
+    {
+      "name": "glow_soft",
+      "value": "Soft"
+    },
+    {
+      "name": "glow_standard",
+      "value": "Standard"
+    },
+    {
+      "name": "glow_clear",
+      "value": "Clear"
+    },
+    {
+      "name": "glow_hint_soft",
+      "value": "Thicker material, calmer background, easier to read in bright light"
+    },
+    {
+      "name": "glow_hint_standard",
+      "value": "Balanced transparency and legibility, the system default"
+    },
+    {
+      "name": "glow_hint_clear",
+      "value": "Thinnest material, background shows through the most"
+    },
+    {
+      "name": "glow_note_supported",
+      "value": "Adjusts the material thickness of the floating tab bar and half-modal panels. Changes apply immediately and are saved on this device."
+    },
+    {
+      "name": "glow_note_unsupported",
+      "value": "This device does not support system immersive material. The setting is saved and will apply on supported devices."
+    },
+    {
+      "name": "about_version",
+      "value": "Version"
+    },
+    {
+      "name": "about_developer",
+      "value": "Developer"
+    },
+    {
+      "name": "about_package",
+      "value": "Bundle name"
+    },
+    {
+      "name": "about_website",
+      "value": "Website"
+    },
+    {
+      "name": "about_email",
+      "value": "Email"
+    },
+    {
+      "name": "about_licenses",
+      "value": "Open-source licenses"
+    },
+    {
+      "name": "licenses_list_title",
+      "value": "Licenses"
+    },
+    {
+      "name": "licenses_section_projects",
+      "value": "Project names and repositories"
+    },
+    {
+      "name": "licenses_section_third",
+      "value": "Third-party components and licenses"
+    },
+    {
+      "name": "licenses_section_mit_sub",
+      "value": "One of Ruffle's dual licenses (MIT or Apache-2.0, at your option)"
+    },
+    {
+      "name": "licenses_section_apache_sub",
+      "value": "The other option of Ruffle's dual license"
+    },
+    {
+      "name": "licenses_section_third_sub",
+      "value": "Third-party libraries used by Ruffle, with full license texts"
+    },
+    {
+      "name": "licenses_this_project",
+      "value": "This project"
+    },
+    {
+      "name": "licenses_upstream_project",
+      "value": "Upstream project"
+    },
+    {
+      "name": "licenses_components",
+      "value": "Component and version"
+    },
+    {
+      "name": "licenses_copyright",
+      "value": "Copyright notice"
+    },
+    {
+      "name": "licenses_full_text",
+      "value": "Full license text"
+    },
+    {
+      "name": "licenses_note_label",
+      "value": "Notice"
+    },
+    {
+      "name": "licenses_note_body",
+      "value": "The upstream LICENSE.md lists Ruffle's third-party components and their full license texts; that file ships with this app. Components compiled into this app's engine but not listed separately upstream are covered by the supplemental notice."
+    },
+    {
+      "name": "licenses_view_upstream",
+      "value": "View the full upstream LICENSE.md"
+    },
+    {
+      "name": "licenses_view_supplement",
+      "value": "View the full supplemental notice"
+    },
+    {
+      "name": "licenses_supplement_title",
+      "value": "Third-party supplemental notice"
+    },
+    {
+      "name": "licenses_supplement_sub",
+      "value": "Components not listed separately upstream, with licenses"
+    },
+    {
+      "name": "licenses_upstream_sub",
+      "value": "License file bundled with the upstream repository"
+    },
+    {
+      "name": "a11y_licenses_back",
+      "value": "Back to licenses"
+    },
+    {
+      "name": "a11y_about_back",
+      "value": "Back to About RFulash"
+    },
+    {
+      "name": "ruffle_components",
+      "value": "Ruffle %s (ruffle_core, ruffle_render_gles and other crates)"
+    },
+    {
+      "name": "language_settings_title",
+      "value": "Language"
+    },
+    {
+      "name": "language_system",
+      "value": "Follow system"
+    },
+    {
+      "name": "language_zh",
+      "value": "简体中文"
+    },
+    {
+      "name": "language_zh_hant",
+      "value": "繁體中文"
+    },
+    {
+      "name": "language_ru",
+      "value": "Русский"
+    },
+    {
+      "name": "language_en",
+      "value": "English"
+    },
+    {
+      "name": "language_ja",
+      "value": "日本語"
+    },
+    {
+      "name": "language_ko",
+      "value": "한국어"
+    },
+    {
+      "name": "untitled_swf",
+      "value": "Untitled SWF"
+    }
+  ]
+}

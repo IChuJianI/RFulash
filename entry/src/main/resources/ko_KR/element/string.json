@@ -1,0 +1,804 @@
+{
+  "string": [
+    {
+      "name": "module_desc",
+      "value": "Ruffle 기반 HarmonyOS 네이티브 Flash 플레이어"
+    },
+    {
+      "name": "EntryAbility_desc",
+      "value": "RFulash"
+    },
+    {
+      "name": "EntryAbility_label",
+      "value": "RFulash"
+    },
+    {
+      "name": "permission_download_reason",
+      "value": "라이브러리가 다운로드 폴더에 접근하여 가져온 SWF 파일을 Download/com.52wfun.rfulash/players에 저장합니다"
+    },
+    {
+      "name": "app_tagline",
+      "value": "HarmonyOS 네이티브 Flash 플레이어"
+    },
+    {
+      "name": "home_title",
+      "value": "홈"
+    },
+    {
+      "name": "tab_play",
+      "value": "재생"
+    },
+    {
+      "name": "about_title",
+      "value": "정보"
+    },
+    {
+      "name": "status_initializing",
+      "value": "렌더러 초기화 중…"
+    },
+    {
+      "name": "status_load_failed",
+      "value": "로드 실패"
+    },
+    {
+      "name": "status_loading",
+      "value": "로딩 중…"
+    },
+    {
+      "name": "status_ready",
+      "value": "준비 완료. SWF 파일을 선택하여 재생을 시작하세요"
+    },
+    {
+      "name": "status_reloading",
+      "value": "다시 로딩 중…"
+    },
+    {
+      "name": "no_movie",
+      "value": "열린 SWF 없음"
+    },
+    {
+      "name": "error_engine_init",
+      "value": "Ruffle 엔진을 초기화할 수 없습니다"
+    },
+    {
+      "name": "error_refused_file",
+      "value": "네이티브 계층이 이 파일을 거부했습니다"
+    },
+    {
+      "name": "error_refused_url",
+      "value": "네이티브 계층이 이 링크를 거부했습니다"
+    },
+    {
+      "name": "error_no_context",
+      "value": "앱 컨텍스트를 가져올 수 없습니다"
+    },
+    {
+      "name": "error_no_download_dir",
+      "value": "다운로드 폴더에 접근할 수 없습니다. 권한을 허용한 후 다시 시도하세요"
+    },
+    {
+      "name": "toast_movie_exited",
+      "value": "동영상이 종료되었습니다"
+    },
+    {
+      "name": "toast_select_failed",
+      "value": "파일 선택 실패: %s"
+    },
+    {
+      "name": "toast_save_failed",
+      "value": "파일 저장 실패: %s"
+    },
+    {
+      "name": "toast_open_link_failed",
+      "value": "링크를 열 수 없습니다: %s"
+    },
+    {
+      "name": "toast_group_required",
+      "value": "그룹 이름을 입력하세요"
+    },
+    {
+      "name": "toast_group_invalid",
+      "value": "올바르지 않은 그룹 이름입니다"
+    },
+    {
+      "name": "toast_group_exists",
+      "value": "같은 이름의 그룹이 이미 있습니다"
+    },
+    {
+      "name": "toast_group_create_failed",
+      "value": "그룹 생성 실패: %s"
+    },
+    {
+      "name": "toast_group_created",
+      "value": "그룹 \"%s\" 생성됨"
+    },
+    {
+      "name": "toast_group_rename_failed",
+      "value": "이름 변경 실패: %s"
+    },
+    {
+      "name": "toast_group_renamed",
+      "value": "\"%s\"(으)로 이름 변경됨"
+    },
+    {
+      "name": "toast_move_exists",
+      "value": "대상 그룹에 같은 이름의 파일이 이미 있습니다"
+    },
+    {
+      "name": "toast_moved",
+      "value": "\"%s\"(으)로 이동됨"
+    },
+    {
+      "name": "toast_move_failed",
+      "value": "이동 실패: %s"
+    },
+    {
+      "name": "toast_group_delete_failed",
+      "value": "그룹 삭제 실패: %s"
+    },
+    {
+      "name": "toast_group_deleted",
+      "value": "그룹 삭제됨"
+    },
+    {
+      "name": "toast_import_failed",
+      "value": "가져오기 실패: %s"
+    },
+    {
+      "name": "toast_import_permission",
+      "value": "라이브러리로 가져오려면 다운로드 폴더 권한이 필요합니다"
+    },
+    {
+      "name": "toast_import_added",
+      "value": "파일 %d개를 %s에 추가했습니다"
+    },
+    {
+      "name": "toast_import_failed_count",
+      "value": "가져오기 실패: 파일 %d개를 추가하지 못했습니다"
+    },
+    {
+      "name": "toast_import_partial",
+      "value": "파일 %d개 추가됨, %d개 실패"
+    },
+    {
+      "name": "toast_library_removed",
+      "value": "라이브러리에서 제거됨"
+    },
+    {
+      "name": "toast_library_cleared",
+      "value": "라이브러리를 비웠습니다"
+    },
+    {
+      "name": "toast_library_refreshed",
+      "value": "새로고침됨"
+    },
+    {
+      "name": "toast_file_missing_import",
+      "value": "파일에 접근할 수 없습니다. 다시 가져오세요"
+    },
+    {
+      "name": "toast_file_missing_open",
+      "value": "파일에 접근할 수 없습니다. 다시 여세요"
+    },
+    {
+      "name": "toast_url_invalid",
+      "value": "http:// 또는 https://로 시작하는 링크를 입력하세요"
+    },
+    {
+      "name": "toast_recent_removed",
+      "value": "최근 항목에서 제거됨"
+    },
+    {
+      "name": "toast_recents_cleared",
+      "value": "최근 항목을 비웠습니다"
+    },
+    {
+      "name": "toast_link_copied",
+      "value": "링크가 복사되었습니다"
+    },
+    {
+      "name": "toast_license_read_failed",
+      "value": "라이선스 파일을 읽지 못했습니다"
+    },
+    {
+      "name": "toast_copied",
+      "value": "복사됨"
+    },
+    {
+      "name": "toast_copy_failed",
+      "value": "복사 실패"
+    },
+    {
+      "name": "action_cancel",
+      "value": "취소"
+    },
+    {
+      "name": "action_delete",
+      "value": "삭제"
+    },
+    {
+      "name": "action_remove",
+      "value": "제거"
+    },
+    {
+      "name": "action_clear",
+      "value": "비우기"
+    },
+    {
+      "name": "action_confirm",
+      "value": "확인"
+    },
+    {
+      "name": "action_create",
+      "value": "만들기"
+    },
+    {
+      "name": "dialog_delete_group",
+      "value": "그룹 삭제"
+    },
+    {
+      "name": "dialog_delete_group_msg",
+      "value": "그룹 \"%s\"을(를) 삭제하시겠습니까? 그룹에 있는 작품 파일 %d개도 함께 삭제됩니다."
+    },
+    {
+      "name": "dialog_delete_empty_group_msg",
+      "value": "빈 그룹 \"%s\"을(를) 삭제하시겠습니까?"
+    },
+    {
+      "name": "dialog_remove_work",
+      "value": "작품 제거"
+    },
+    {
+      "name": "dialog_remove_work_msg",
+      "value": "라이브러리에서 \"%s\"을(를) 제거하시겠습니까? 해당 파일도 함께 삭제됩니다."
+    },
+    {
+      "name": "dialog_clear_library",
+      "value": "라이브러리 비우기"
+    },
+    {
+      "name": "dialog_clear_library_msg",
+      "value": "라이브러리를 비우시겠습니까? 작품 %d개%s도 함께 삭제됩니다."
+    },
+    {
+      "name": "dialog_groups_suffix",
+      "value": " 및 그룹 폴더 %d개"
+    },
+    {
+      "name": "dialog_remove_record",
+      "value": "기록 제거"
+    },
+    {
+      "name": "dialog_remove_record_msg",
+      "value": "최근 항목에서 \"%s\"을(를) 제거하시겠습니까?"
+    },
+    {
+      "name": "dialog_clear_recents",
+      "value": "최근 항목 비우기"
+    },
+    {
+      "name": "dialog_clear_recents_msg",
+      "value": "기록 %d개를 모두 비우시겠습니까?"
+    },
+    {
+      "name": "library_title",
+      "value": "라이브러리"
+    },
+    {
+      "name": "recents_title",
+      "value": "최근 열기"
+    },
+    {
+      "name": "lib_import",
+      "value": "가져오기"
+    },
+    {
+      "name": "lib_new_group",
+      "value": "새 그룹"
+    },
+    {
+      "name": "lib_search",
+      "value": "검색"
+    },
+    {
+      "name": "lib_refresh",
+      "value": "새로고침"
+    },
+    {
+      "name": "lib_clear",
+      "value": "비우기"
+    },
+    {
+      "name": "search_placeholder",
+      "value": "작품 또는 그룹 검색"
+    },
+    {
+      "name": "no_match",
+      "value": "일치하는 결과 없음"
+    },
+    {
+      "name": "no_works",
+      "value": "작품이 없습니다. \"새 그룹\" 또는 \"가져오기\"를 눌러 추가하세요"
+    },
+    {
+      "name": "no_records",
+      "value": "기록 없음"
+    },
+    {
+      "name": "group_default",
+      "value": "기본"
+    },
+    {
+      "name": "group_quoted",
+      "value": "\"%s\""
+    },
+    {
+      "name": "group_count",
+      "value": "%d개"
+    },
+    {
+      "name": "group_rename_note",
+      "value": "이름을 변경하면 players의 폴더 이름도 함께 바뀌며, 안에 있는 작품은 유지됩니다."
+    },
+    {
+      "name": "group_create_note",
+      "value": "그룹은 players 폴더 안의 같은 이름 하위 폴더이며, 파일 관리자에서 직접 확인하고 관리할 수 있습니다."
+    },
+    {
+      "name": "group_name_placeholder",
+      "value": "그룹 이름"
+    },
+    {
+      "name": "move_prompt",
+      "value": "\"%s\" 이동 위치:"
+    },
+    {
+      "name": "move_no_groups",
+      "value": "아직 그룹이 없습니다. 라이브러리에서 \"새 그룹\"을 눌러 만드세요."
+    },
+    {
+      "name": "recent_link",
+      "value": "링크"
+    },
+    {
+      "name": "recent_local",
+      "value": "로컬"
+    },
+    {
+      "name": "ctx_delete",
+      "value": "삭제"
+    },
+    {
+      "name": "ctx_import_to_group",
+      "value": "이 그룹으로 가져오기"
+    },
+    {
+      "name": "ctx_rename",
+      "value": "이름 변경"
+    },
+    {
+      "name": "ctx_delete_group",
+      "value": "그룹 삭제"
+    },
+    {
+      "name": "ctx_open",
+      "value": "열기"
+    },
+    {
+      "name": "ctx_move_to_group",
+      "value": "그룹으로 이동"
+    },
+    {
+      "name": "ctx_remove_from_library",
+      "value": "라이브러리에서 제거"
+    },
+    {
+      "name": "menu_open_swf",
+      "value": "SWF 열기"
+    },
+    {
+      "name": "menu_library",
+      "value": "라이브러리"
+    },
+    {
+      "name": "menu_recents",
+      "value": "최근 열기"
+    },
+    {
+      "name": "menu_pause",
+      "value": "일시정지"
+    },
+    {
+      "name": "menu_resume",
+      "value": "계속"
+    },
+    {
+      "name": "menu_settings",
+      "value": "설정"
+    },
+    {
+      "name": "menu_fullscreen",
+      "value": "전체 화면"
+    },
+    {
+      "name": "home_select_hint",
+      "value": "SWF 파일을 선택하여 재생을 시작하세요"
+    },
+    {
+      "name": "home_auto_collect",
+      "value": "라이브러리는 Download/RFulash/players의 파일을 자동으로 수집합니다"
+    },
+    {
+      "name": "home_steps_title",
+      "value": "3단계로 재생 시작"
+    },
+    {
+      "name": "home_step1_title",
+      "value": "SWF 열기"
+    },
+    {
+      "name": "home_step1_desc",
+      "value": "로컬 SWF 파일을 선택하면 바로 재생됩니다"
+    },
+    {
+      "name": "home_step2_title",
+      "value": "라이브러리"
+    },
+    {
+      "name": "home_step2_desc",
+      "value": "Download/RFulash/players의 파일을 자동으로 수집합니다"
+    },
+    {
+      "name": "home_step3_title",
+      "value": "몰입형 재생"
+    },
+    {
+      "name": "home_step3_desc",
+      "value": "전체 화면, 화면 확대/축소, 키보드·마우스 조작까지 지원"
+    },
+    {
+      "name": "home_privacy",
+      "value": "모든 파일은 기기에서 처리되며 네트워크로 전송되지 않습니다"
+    },
+    {
+      "name": "home_hero_desc",
+      "value": "네이티브 Ruffle 엔진 기반으로 브라우저가 필요 없습니다. 로컬 SWF 파일을 선택하면 Flash를 그대로 재생할 수 있습니다."
+    },
+    {
+      "name": "a11y_open_swf_file",
+      "value": "SWF 파일 열기"
+    },
+    {
+      "name": "keyboard_placeholder",
+      "value": "텍스트 입력…"
+    },
+    {
+      "name": "picker_file",
+      "value": "파일"
+    },
+    {
+      "name": "picker_flash",
+      "value": "Flash 애니메이션"
+    },
+    {
+      "name": "player_settings_title",
+      "value": "플레이어 설정"
+    },
+    {
+      "name": "settings_basic_group",
+      "value": "기본 및 핵심"
+    },
+    {
+      "name": "settings_look_group",
+      "value": "모양 스타일"
+    },
+    {
+      "name": "row_play_settings",
+      "value": "재생 설정"
+    },
+    {
+      "name": "row_sound_settings",
+      "value": "소리"
+    },
+    {
+      "name": "row_picture_settings",
+      "value": "화면"
+    },
+    {
+      "name": "row_display_settings",
+      "value": "디스플레이"
+    },
+    {
+      "name": "row_appearance_settings",
+      "value": "모양"
+    },
+    {
+      "name": "row_theme_settings",
+      "value": "테마"
+    },
+    {
+      "name": "row_glow",
+      "value": "이머시브 머티리얼"
+    },
+    {
+      "name": "row_language_settings",
+      "value": "언어"
+    },
+    {
+      "name": "row_about",
+      "value": "RFulash 정보"
+    },
+    {
+      "name": "player_reload",
+      "value": "다시 로드"
+    },
+    {
+      "name": "player_step_forward",
+      "value": "한 단계 앞으로"
+    },
+    {
+      "name": "player_master_volume",
+      "value": "볼륨"
+    },
+    {
+      "name": "player_force_scale",
+      "value": "배율 모드 강제"
+    },
+    {
+      "name": "player_letterbox",
+      "value": "검은 여백 표시(레터박스)"
+    },
+    {
+      "name": "player_enter_fullscreen",
+      "value": "전체 화면 시작"
+    },
+    {
+      "name": "player_exit_fullscreen",
+      "value": "전체 화면 종료"
+    },
+    {
+      "name": "a11y_back_player_settings",
+      "value": "플레이어 설정으로 돌아가기"
+    },
+    {
+      "name": "quality_low",
+      "value": "낮음"
+    },
+    {
+      "name": "quality_medium",
+      "value": "중간"
+    },
+    {
+      "name": "quality_high",
+      "value": "높음"
+    },
+    {
+      "name": "quality_best",
+      "value": "최고"
+    },
+    {
+      "name": "scale_fit_window",
+      "value": "창에 맞춤"
+    },
+    {
+      "name": "scale_exact_fit",
+      "value": "정확히 맞춤"
+    },
+    {
+      "name": "scale_fill_crop",
+      "value": "채우고 자르기"
+    },
+    {
+      "name": "scale_original",
+      "value": "원본 크기"
+    },
+    {
+      "name": "theme_follow_system",
+      "value": "시스템 설정 따르기"
+    },
+    {
+      "name": "theme_light",
+      "value": "라이트"
+    },
+    {
+      "name": "theme_dark",
+      "value": "다크"
+    },
+    {
+      "name": "accent_orange",
+      "value": "주황"
+    },
+    {
+      "name": "accent_blue",
+      "value": "파랑"
+    },
+    {
+      "name": "accent_purple",
+      "value": "보라"
+    },
+    {
+      "name": "accent_red",
+      "value": "빨강"
+    },
+    {
+      "name": "accent_teal",
+      "value": "청록"
+    },
+    {
+      "name": "glow_soft",
+      "value": "부드럽게"
+    },
+    {
+      "name": "glow_standard",
+      "value": "표준"
+    },
+    {
+      "name": "glow_clear",
+      "value": "투명"
+    },
+    {
+      "name": "glow_hint_soft",
+      "value": "소재가 더 두껍고 배경이 차분해져 밝은 곳에서도 읽기 쉽습니다"
+    },
+    {
+      "name": "glow_hint_standard",
+      "value": "투명도와 가독성의 균형을 맞춘 시스템 기본 설정"
+    },
+    {
+      "name": "glow_hint_clear",
+      "value": "소재가 가장 얇아 배경이 가장 많이 비칩니다"
+    },
+    {
+      "name": "glow_note_supported",
+      "value": "플로팅 탭 바와 하프 모달 패널의 소재 두께를 조정합니다. 변경 사항은 즉시 적용되고 이 기기에 저장됩니다."
+    },
+    {
+      "name": "glow_note_unsupported",
+      "value": "이 기기는 시스템 이머시브 머티리얼을 지원하지 않습니다. 설정은 저장되며 지원되는 기기에서 적용됩니다."
+    },
+    {
+      "name": "about_version",
+      "value": "버전"
+    },
+    {
+      "name": "about_developer",
+      "value": "개발자"
+    },
+    {
+      "name": "about_package",
+      "value": "패키지 이름"
+    },
+    {
+      "name": "about_website",
+      "value": "공식 웹사이트"
+    },
+    {
+      "name": "about_email",
+      "value": "이메일"
+    },
+    {
+      "name": "about_licenses",
+      "value": "오픈소스 라이선스"
+    },
+    {
+      "name": "licenses_list_title",
+      "value": "라이선스 목록"
+    },
+    {
+      "name": "licenses_section_projects",
+      "value": "프로젝트 이름 및 저장소"
+    },
+    {
+      "name": "licenses_section_third",
+      "value": "서드파티 구성 요소 및 라이선스"
+    },
+    {
+      "name": "licenses_section_mit_sub",
+      "value": "Ruffle 듀얼 라이선스 중 하나(MIT 또는 Apache-2.0 선택)"
+    },
+    {
+      "name": "licenses_section_apache_sub",
+      "value": "Ruffle 듀얼 라이선스의 다른 옵션"
+    },
+    {
+      "name": "licenses_section_third_sub",
+      "value": "Ruffle이 사용하는 서드파티 라이브러리 목록과 전체 라이선스"
+    },
+    {
+      "name": "licenses_this_project",
+      "value": "이 프로젝트"
+    },
+    {
+      "name": "licenses_upstream_project",
+      "value": "업스트림 프로젝트"
+    },
+    {
+      "name": "licenses_components",
+      "value": "구성 요소 및 버전"
+    },
+    {
+      "name": "licenses_copyright",
+      "value": "저작권 고지"
+    },
+    {
+      "name": "licenses_full_text",
+      "value": "전체 라이선스"
+    },
+    {
+      "name": "licenses_note_label",
+      "value": "안내"
+    },
+    {
+      "name": "licenses_note_body",
+      "value": "업스트림 LICENSE.md에는 Ruffle의 서드파티 구성 요소 목록과 전체 라이선스가 포함되어 있으며, 이 파일은 앱과 함께 배포됩니다. 업스트림 목록에 개별 표기되지 않았지만 본 앱 엔진에 포함된 구성 요소는 보충 고지에 정리되어 있습니다."
+    },
+    {
+      "name": "licenses_view_upstream",
+      "value": "업스트림 LICENSE.md 전체 보기"
+    },
+    {
+      "name": "licenses_view_supplement",
+      "value": "보충 고지 전체 보기"
+    },
+    {
+      "name": "licenses_supplement_title",
+      "value": "서드파티 보충 고지"
+    },
+    {
+      "name": "licenses_supplement_sub",
+      "value": "업스트림 목록에 개별 표기되지 않은 구성 요소 및 라이선스"
+    },
+    {
+      "name": "licenses_upstream_sub",
+      "value": "업스트림 저장소에 포함된 라이선스 파일 원문"
+    },
+    {
+      "name": "a11y_licenses_back",
+      "value": "라이선스 목록으로 돌아가기"
+    },
+    {
+      "name": "a11y_about_back",
+      "value": "RFulash 정보로 돌아가기"
+    },
+    {
+      "name": "ruffle_components",
+      "value": "Ruffle %s(ruffle_core, ruffle_render_gles 등 크레이트)"
+    },
+    {
+      "name": "language_settings_title",
+      "value": "언어"
+    },
+    {
+      "name": "language_system",
+      "value": "시스템 설정 따르기"
+    },
+    {
+      "name": "language_zh",
+      "value": "简体中文"
+    },
+    {
+      "name": "language_zh_hant",
+      "value": "繁體中文"
+    },
+    {
+      "name": "language_ru",
+      "value": "Русский"
+    },
+    {
+      "name": "language_en",
+      "value": "English"
+    },
+    {
+      "name": "language_ja",
+      "value": "日本語"
+    },
+    {
+      "name": "language_ko",
+      "value": "한국어"
+    },
+    {
+      "name": "untitled_swf",
+      "value": "이름 없음"
+    }
+  ]
+}
