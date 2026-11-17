@@ -50,6 +50,14 @@ utf8_iter 1.0.4 — Apache-2.0 或 MIT — Copyright Mozilla Foundation
 zmij 1.0.23 — MIT — David Tolnay
 zune-core 0.5.3 / zune-jpeg 0.5.15 — MIT 或 Apache-2.0 或 Zlib — Copyright (c) zune-image developers
 
+## 品牌素材
+
+### 华为应用市场图标
+
+- 来源：华为应用市场官方图标，存放于 `store/icon/appgallery_icon_400.png`
+- 归属：图标版权及相关商标归华为技术有限公司所有
+- 说明：仅用于在 README 中标识并链接 RFulash 的华为应用市场详情页，不随应用分发。
+
 ## 许可全文
 
 上述组件的许可全文均见随应用分发的上游 LICENSE.md（含 MIT、Apache-2.0、BSD-2/3-Clause、Zlib、ISC、0BSD、Unlicense、MPL-2.0）。self_cell 为 Apache-2.0 或 GPL-2.0 双许可，本项目选用 Apache-2.0。
