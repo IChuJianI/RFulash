@@ -16,9 +16,12 @@ fontdb 0.23.0 — MIT — Copyright (c) 2020 Yevhenii Reizner
 fontconfig-parser 0.5.8 — MIT — Copyright (c) 2021 Riey
 roxmltree 0.20.0 — MIT 或 Apache-2.0 — Copyright (c) 2018 Yevhenii Reizner
 adler2 2.0.1 — 0BSD 或 MIT 或 Apache-2.0 — Copyright (C) Jonas Schievink
+async-channel 2.5.0 — Apache-2.0 或 MIT — Stjepan Glavina、smol-rs 贡献者
 chardetng 0.1.17 — Apache-2.0 或 MIT — Copyright Mozilla Foundation
 codespan-reporting 0.13.1 — Apache-2.0 — Brendan Zabarauskas
+concurrent-queue 2.5.0 — Apache-2.0 或 MIT — Stjepan Glavina、Taiki Endo、John Nunley
 event-listener 5.4.2 — Apache-2.0 或 MIT — smol-rs 贡献者
+event-listener-strategy 0.5.4 — Apache-2.0 或 MIT — John Nunley
 fax 0.2.7 — MIT — Copyright © 2021 The pdf-rs contributers
 fdeflate 0.3.7 — MIT 或 Apache-2.0 — The image-rs Developers
 float_next_after 1.0.0 — MIT — Copyright (c) 2020 Scripta Qumranica Electronica
