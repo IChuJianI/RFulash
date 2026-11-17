@@ -8,7 +8,7 @@ RFulash 将 [Ruffle](https://github.com/ruffle-rs/ruffle)（Rust 实现的 Flash
 
 ## 功能
 
-- 打开本地 SWF 文件或在线链接播放
+- 打开本地 SWF 文件
 - 播放库与最近打开记录，支持分组管理
 - 全屏播放、画面缩放与键鼠操作
 - 浅色/深色主题，跟随系统 / 简体中文 / 繁體中文 / English / 日本語 / 한국어 / Русский
