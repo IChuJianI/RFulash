@@ -27,7 +27,6 @@ int ruffle_peek_event(void);
 int ruffle_poll_event(char* buffer, int32_t capacity);
 int ruffle_http_result(uint32_t id, int32_t status, const char* content_type, const char* body);
 int ruffle_load_swf(const char* path);
-int ruffle_load_url(const char* url);
 int ruffle_set_playing(int32_t playing);
 int ruffle_toggle_playing(void);
 int ruffle_touch(int32_t action, float x, float y);
@@ -298,20 +297,6 @@ napi_value NativeLoadSwf(napi_env env, napi_callback_info info) {
     return MakeInt(env, ruffle_load_swf(path.c_str()));
 }
 
-napi_value NativeLoadUrl(napi_env env, napi_callback_info info) {
-    size_t argc = 1;
-    napi_value args[1] = {nullptr};
-    if (napi_get_cb_info(env, info, &argc, args, nullptr, nullptr) != napi_ok || argc < 1) {
-        return MakeInt(env, -1);
-    }
-    std::string url = GetStringArg(env, args[0]);
-    if (url.empty()) {
-        return MakeInt(env, -1);
-    }
-    LOGI("nativeLoadUrl %{public}s", url.c_str());
-    return MakeInt(env, ruffle_load_url(url.c_str()));
-}
-
 napi_value NativeSetPlaying(napi_env env, napi_callback_info info) {
     size_t argc = 1;
     napi_value args[1] = {nullptr};
@@ -479,7 +464,6 @@ napi_value Init(napi_env env, napi_value exports) {
         {"nativeHttpResult", nullptr, NativeHttpResult, nullptr, nullptr, nullptr, napi_default,
          nullptr},
         {"nativeLoadSwf", nullptr, NativeLoadSwf, nullptr, nullptr, nullptr, napi_default, nullptr},
-        {"nativeLoadUrl", nullptr, NativeLoadUrl, nullptr, nullptr, nullptr, napi_default, nullptr},
         {"nativeSetPlaying", nullptr, NativeSetPlaying, nullptr, nullptr, nullptr, napi_default,
          nullptr},
         {"nativeTogglePlaying", nullptr, NativeTogglePlaying, nullptr, nullptr, nullptr,

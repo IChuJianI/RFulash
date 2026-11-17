@@ -65,10 +65,6 @@
       "value": "The native layer rejected this file"
     },
     {
-      "name": "error_refused_url",
-      "value": "The native layer rejected this link"
-    },
-    {
       "name": "error_no_context",
       "value": "Cannot access the app context"
     },
@@ -87,10 +83,6 @@
     {
       "name": "toast_save_failed",
       "value": "Could not save the file: %s"
-    },
-    {
-      "name": "toast_open_link_failed",
-      "value": "Could not open the link: %s"
     },
     {
       "name": "toast_group_required",
@@ -179,10 +171,6 @@
     {
       "name": "toast_file_missing_open",
       "value": "The file is no longer accessible. Open it again"
-    },
-    {
-      "name": "toast_url_invalid",
-      "value": "Enter a link starting with http:// or https://"
     },
     {
       "name": "toast_recent_removed",
@@ -355,10 +343,6 @@
     {
       "name": "move_no_groups",
       "value": "No groups yet. Create one with “New group” in the library."
-    },
-    {
-      "name": "recent_link",
-      "value": "Link"
     },
     {
       "name": "recent_local",

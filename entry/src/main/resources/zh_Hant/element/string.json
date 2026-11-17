@@ -65,10 +65,6 @@
       "value": "原生層拒絕了這個檔案"
     },
     {
-      "name": "error_refused_url",
-      "value": "原生層拒絕了該連結"
-    },
-    {
       "name": "error_no_context",
       "value": "無法取得應用程式內容"
     },
@@ -87,10 +83,6 @@
     {
       "name": "toast_save_failed",
       "value": "儲存檔案失敗: %s"
-    },
-    {
-      "name": "toast_open_link_failed",
-      "value": "無法開啟連結: %s"
     },
     {
       "name": "toast_group_required",
@@ -179,10 +171,6 @@
     {
       "name": "toast_file_missing_open",
       "value": "檔案已無法存取，請重新開啟"
-    },
-    {
-      "name": "toast_url_invalid",
-      "value": "請輸入 http:// 或 https:// 連結"
     },
     {
       "name": "toast_recent_removed",
@@ -355,10 +343,6 @@
     {
       "name": "move_no_groups",
       "value": "還沒有分組，先在播放庫頁點「新增分組」建立一個。"
-    },
-    {
-      "name": "recent_link",
-      "value": "連結"
     },
     {
       "name": "recent_local",

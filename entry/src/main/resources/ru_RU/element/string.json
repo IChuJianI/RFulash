@@ -65,10 +65,6 @@
       "value": "Нативный уровень отклонил этот файл"
     },
     {
-      "name": "error_refused_url",
-      "value": "Нативный уровень отклонил эту ссылку"
-    },
-    {
       "name": "error_no_context",
       "value": "Не удалось получить контекст приложения"
     },
@@ -87,10 +83,6 @@
     {
       "name": "toast_save_failed",
       "value": "Не удалось сохранить файл: %s"
-    },
-    {
-      "name": "toast_open_link_failed",
-      "value": "Не удалось открыть ссылку: %s"
     },
     {
       "name": "toast_group_required",
@@ -179,10 +171,6 @@
     {
       "name": "toast_file_missing_open",
       "value": "Файл больше недоступен. Откройте его снова"
-    },
-    {
-      "name": "toast_url_invalid",
-      "value": "Введите ссылку, начинающуюся с http:// или https://"
     },
     {
       "name": "toast_recent_removed",
@@ -355,10 +343,6 @@
     {
       "name": "move_no_groups",
       "value": "Групп пока нет. Создайте её кнопкой «Новая группа» в библиотеке."
-    },
-    {
-      "name": "recent_link",
-      "value": "Ссылка"
     },
     {
       "name": "recent_local",

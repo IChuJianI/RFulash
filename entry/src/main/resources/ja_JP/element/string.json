@@ -65,10 +65,6 @@
       "value": "ネイティブ層がこのファイルを拒否しました"
     },
     {
-      "name": "error_refused_url",
-      "value": "ネイティブ層がこのリンクを拒否しました"
-    },
-    {
       "name": "error_no_context",
       "value": "アプリのコンテキストを取得できません"
     },
@@ -87,10 +83,6 @@
     {
       "name": "toast_save_failed",
       "value": "ファイルの保存に失敗しました: %s"
-    },
-    {
-      "name": "toast_open_link_failed",
-      "value": "リンクを開けません: %s"
     },
     {
       "name": "toast_group_required",
@@ -179,10 +171,6 @@
     {
       "name": "toast_file_missing_open",
       "value": "ファイルにアクセスできません。再度開いてください"
-    },
-    {
-      "name": "toast_url_invalid",
-      "value": "http:// または https:// で始まるリンクを入力してください"
     },
     {
       "name": "toast_recent_removed",
@@ -355,10 +343,6 @@
     {
       "name": "move_no_groups",
       "value": "グループがありません。ライブラリで「新規グループ」を押して作成してください。"
-    },
-    {
-      "name": "recent_link",
-      "value": "リンク"
     },
     {
       "name": "recent_local",

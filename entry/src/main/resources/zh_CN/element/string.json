@@ -65,10 +65,6 @@
       "value": "原生层拒绝了这个文件"
     },
     {
-      "name": "error_refused_url",
-      "value": "原生层拒绝了该链接"
-    },
-    {
       "name": "error_no_context",
       "value": "无法获取应用上下文"
     },
@@ -87,10 +83,6 @@
     {
       "name": "toast_save_failed",
       "value": "保存文件失败: %s"
-    },
-    {
-      "name": "toast_open_link_failed",
-      "value": "无法打开链接: %s"
     },
     {
       "name": "toast_group_required",
@@ -179,10 +171,6 @@
     {
       "name": "toast_file_missing_open",
       "value": "文件已不可访问，请重新打开"
-    },
-    {
-      "name": "toast_url_invalid",
-      "value": "请输入 http:// 或 https:// 链接"
     },
     {
       "name": "toast_recent_removed",
@@ -355,10 +343,6 @@
     {
       "name": "move_no_groups",
       "value": "还没有分组，先在播放库页点「新建分组」创建一个。"
-    },
-    {
-      "name": "recent_link",
-      "value": "链接"
     },
     {
       "name": "recent_local",

@@ -1,4 +1,4 @@
-import { abilityAccessCtrl, common, ConfigurationConstant, Want } from '@kit.AbilityKit';
+import { abilityAccessCtrl, common, ConfigurationConstant } from '@kit.AbilityKit';
 import { preferences } from '@kit.ArkData';
 import { BusinessError } from '@kit.BasicServicesKit';
 import { util } from '@kit.ArkTS';
@@ -7,7 +7,6 @@ import deviceInfo from '@ohos.deviceInfo';
 import { Environment, fileIo, fileUri, picker, WatchEvent, Watcher } from '@kit.CoreFileKit';
 import { image } from '@kit.ImageKit';
 import { pointer } from '@kit.InputKit';
-import { http } from '@kit.NetworkKit';
 import {
   CURSOR_ARROW,
   CURSOR_GRAB,
@@ -46,7 +45,7 @@ import { LayoutSpec } from '../common/LayoutSpec';
 import { GLOW_STANDARD, glowMaterialStyle, normalizeGlowLevel } from '../common/Glow';
 import { accentBgFor, accentColorFor, DEFAULT_ACCENT, DEFAULT_ACCENT_BG } from '../common/ThemePalette';
 import { applyLanguageNow, LANG_SYSTEM, normalizeLanguageIndex } from '../common/Language';
-import { RECENT_FILE, RECENT_URL, RecentMovie, RecentsStore } from '../model/Recents';
+import { RecentMovie, RecentsStore } from '../model/Recents';
 import { LibraryMovie, LibraryStore } from '../model/Library';
 
 const KEY_ESCAPE = 2070;
@@ -146,7 +145,6 @@ struct Index {
   // before the file is ever read. Such requests wait here instead.
   private pendingLoadSource: string = '';
   private pendingLoadName: string = '';
-  private pendingLoadKind: number = RECENT_FILE;
   private pendingLoadAt: number = 0;
   private pendingLoadAttempts: number = 0;
 
@@ -383,16 +381,12 @@ struct Index {
     if (this.pendingLoadSource.length === 0) {
       return;
     }
-    const isUrl = this.pendingLoadKind === RECENT_URL;
-    const result = isUrl
-      ? RuffleEngine.loadUrl(this.pendingLoadSource)
-      : RuffleEngine.loadSwf(this.pendingLoadSource);
+    const result = RuffleEngine.loadSwf(this.pendingLoadSource);
     this.pendingLoadAt = Date.now();
     if (result === 0) {
       this.pendingRecent = {
         name: this.pendingLoadName,
         source: this.pendingLoadSource,
-        kind: this.pendingLoadKind,
         openedAt: Date.now()
       };
       this.pendingLoadSource = '';
@@ -400,9 +394,7 @@ struct Index {
       return;
     }
     this.pendingLoadAttempts += 1;
-    const refused = this.pendingLoadKind === RECENT_URL
-      ? $r('app.string.error_refused_url')
-      : $r('app.string.error_refused_file');
+    const refused = $r('app.string.error_refused_file');
     if (RuffleEngine.hasSurface() || this.pendingLoadAttempts >= 40) {
       this.pendingLoadSource = '';
       this.pendingLoadAttempts = 0;
@@ -455,9 +447,6 @@ struct Index {
           if (parts.length >= 2) {
             this.perfFps = Number(parts[1]);
           }
-          break;
-        case 'open_url':
-          this.openExternal(payload);
           break;
         case 'fullscreen':
           this.applyFullscreen(payload === '1', false);
@@ -516,84 +505,15 @@ struct Index {
   }
 
   /**
-   * POST requests are issued by the ArkTS stack because the OHOS C HTTP API
-   * cannot attach a body. The Rust navigator blocks on the reply id.
+   * Networking is disabled. Every engine request is answered with a failure
+   * so the Rust navigator does not block waiting for a reply.
    */
-  private async handleHttpRequest(event: string): Promise<void> {
+  private handleHttpRequest(event: string): void {
     const parts = event.split('\t');
     if (parts.length < 6) {
       return;
     }
-    const id = Number(parts[1]);
-    const url = parts[2];
-    const headerJson = parts[3];
-    const contentType = parts[4];
-    const bodyBase64 = parts[5];
-    let status = 0;
-    let responseType = '';
-    let responseBody = '';
-    const request = http.createHttp();
-    const base64 = new util.Base64Helper();
-    try {
-      const header: Record<string, string> = {};
-      const parsed = JSON.parse(headerJson) as Record<string, string>;
-      const keys = Object.keys(parsed);
-      let hasContentType = false;
-      for (let i = 0; i < keys.length; i++) {
-        const name = keys[i];
-        header[name] = parsed[name];
-        if (name.toLowerCase() === 'content-type') {
-          hasContentType = true;
-        }
-      }
-      if (!hasContentType && contentType.length > 0) {
-        header['Content-Type'] = contentType;
-      }
-
-      const payload = bodyBase64.length > 0 ? base64.decodeSync(bodyBase64) : new Uint8Array(0);
-      const options: http.HttpRequestOptions = {
-        method: http.RequestMethod.POST,
-        header: header,
-        extraData: payload.buffer,
-        expectDataType: http.HttpDataType.ARRAY_BUFFER,
-        connectTimeout: 15000,
-        readTimeout: 30000,
-        usingCache: false
-      };
-      const response = await request.request(url, options);
-      status = response.responseCode;
-      responseType = this.findHeader(response.header, 'content-type');
-      if (response.result instanceof ArrayBuffer) {
-        responseBody = base64.encodeToStringSync(new Uint8Array(response.result));
-      } else if (typeof response.result === 'string') {
-        responseBody = base64.encodeToStringSync(new util.TextEncoder().encodeInto(response.result));
-      } else {
-        const text = JSON.stringify(response.result);
-        responseBody = base64.encodeToStringSync(new util.TextEncoder().encodeInto(text));
-      }
-    } catch (error) {
-      const err = error as BusinessError;
-      console.error(`POST ${url} failed: ${err.message}`);
-      status = 0;
-    } finally {
-      request.destroy();
-      RuffleEngine.httpResult(id, status, responseType, responseBody);
-    }
-  }
-
-  private findHeader(header: Object, name: string): string {
-    try {
-      const parsed = header as Record<string, string>;
-      const keys = Object.keys(parsed);
-      for (let i = 0; i < keys.length; i++) {
-        if (keys[i].toLowerCase() === name) {
-          return parsed[keys[i]];
-        }
-      }
-    } catch (error) {
-      console.error(`cannot read response header ${name}`);
-    }
-    return '';
+    RuffleEngine.httpResult(Number(parts[1]), 0, '', '');
   }
 
   private quitApp(): void {
@@ -674,24 +594,6 @@ struct Index {
     } finally {
       RuffleEngine.dialogResult(id, paths.join('\n'));
       this.requestFocus('ruffleFocus');
-    }
-  }
-
-  private async openExternal(url: string): Promise<void> {
-    const context = this.getUIContext().getHostContext();
-    if (!context || url.length === 0) {
-      return;
-    }
-    try {
-      const want: Want = {
-        action: 'ohos.want.action.viewData',
-        entities: ['entity.system.browsable'],
-        uri: url
-      };
-      await (context as common.UIAbilityContext).startAbility(want);
-    } catch (error) {
-      const err = error as BusinessError;
-      this.showToast(this.format($r('app.string.toast_open_link_failed'), err.message));
     }
   }
 
@@ -1851,7 +1753,7 @@ struct Index {
     }
     try {
       const target = this.copyIntoImports(uri, name);
-      this.requestLoad(name, target, RECENT_FILE);
+      this.requestLoad(name, target);
     } catch (error) {
       const err = error as BusinessError;
       this.opening = false;
@@ -2117,7 +2019,7 @@ struct Index {
     }
     this.settingsVisible = false;
     this.libSheetVisible = false;
-    this.requestLoad(entry.name, entry.source, RECENT_FILE);
+    this.requestLoad(entry.name, entry.source);
   }
 
   /**
@@ -2174,12 +2076,11 @@ struct Index {
     this.requestFocus('ruffleFocus');
   }
 
-  /** Opens a file or URL, waiting for the engine surface when it is not up yet. */
-  private requestLoad(name: string, source: string, kind: number): void {
+  /** Opens a local file, waiting for the engine surface when it is not up yet. */
+  private requestLoad(name: string, source: string): void {
     this.startLoading(name);
     this.pendingLoadSource = source;
     this.pendingLoadName = name;
-    this.pendingLoadKind = kind;
     this.pendingLoadAttempts = 0;
     this.pendingLoadAt = 0;
     this.attemptLoad();
@@ -2198,23 +2099,9 @@ struct Index {
     }
   }
 
-  private openUrl(rawUrl: string): void {
-    const url = rawUrl.trim();
-    if (!url.startsWith('http://') && !url.startsWith('https://')) {
-      this.showToast($r('app.string.toast_url_invalid'));
-      return;
-    }
-    this.settingsVisible = false;
-    this.requestLoad(this.nameFromPath(url), url, RECENT_URL);
-  }
-
   private openRecent(entry: RecentMovie): void {
     this.settingsVisible = false;
     this.libSheetVisible = false;
-    if (entry.kind === RECENT_URL) {
-      this.openUrl(entry.source);
-      return;
-    }
     if (!this.canRead(entry.source)) {
       this.showToast($r('app.string.toast_file_missing_open'));
       if (this.recentsStore) {
@@ -2222,7 +2109,7 @@ struct Index {
       }
       return;
     }
-    this.requestLoad(entry.name, entry.source, RECENT_FILE);
+    this.requestLoad(entry.name, entry.source);
   }
 
   /** Destructive: always confirm before dropping a single history entry. */
@@ -2273,19 +2160,18 @@ struct Index {
     });
   }
 
-  /** A .swf opened from another app arrives as a Want URI. */
+  /** A local .swf opened from another app arrives as a Want URI. */
   private onPendingSwfUri(_propName: string): void {
     const uri = this.pendingSwfUri;
     if (uri.length === 0) {
       return;
     }
     AppStorage.setOrCreate('pendingSwfUri', '');
-    this.settingsVisible = false;
     if (uri.startsWith('http://') || uri.startsWith('https://')) {
-      this.openUrl(uri);
-    } else {
-      this.importSwf(uri, this.nameFromPath(uri));
+      return;
     }
+    this.settingsVisible = false;
+    this.importSwf(uri, this.nameFromPath(uri));
   }
 
   private nameFromPath(raw: string): string {
@@ -2958,7 +2844,7 @@ struct Index {
                     onOpen: (recent: RecentMovie) => this.openRecent(recent),
                     onDelete: () => this.removeRecent(entry)
                   })
-                }, (entry: RecentMovie) => `${entry.kind}:${entry.source}`)
+                }, (entry: RecentMovie) => entry.source)
               }
               .width('100%')
             }

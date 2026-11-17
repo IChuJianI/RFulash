@@ -1,5 +1,5 @@
 import { common } from '@kit.AbilityKit';
-import { RECENT_URL, RecentMovie } from '../model/Recents';
+import { RecentMovie } from '../model/Recents';
 import { LibraryMovie } from '../model/Library';
 import { DEFAULT_ACCENT } from '../common/ThemePalette';
 
@@ -12,7 +12,7 @@ const KEY_SPACE = 2052;
 
 @Component
 export struct RecentRow {
-  @Prop entry: RecentMovie = { name: '', source: '', kind: 0, openedAt: 0 };
+  @Prop entry: RecentMovie = { name: '', source: '', openedAt: 0 };
   @StorageLink('accentColor') private accentColor: string = DEFAULT_ACCENT;
   onOpen: RecentCallback = () => {};
   onDelete: VoidCallback = () => {};
@@ -50,7 +50,7 @@ export struct RecentRow {
         .maxLines(1)
         .textOverflow({ overflow: TextOverflow.Ellipsis })
         .layoutWeight(1)
-      Text(this.entry.kind === RECENT_URL ? $r('app.string.recent_link') : $r('app.string.recent_local'))
+      Text($r('app.string.recent_local'))
         .fontSize(12)
         .fontColor($r('app.color.player_text_tertiary'))
         .margin({ left: 8 })

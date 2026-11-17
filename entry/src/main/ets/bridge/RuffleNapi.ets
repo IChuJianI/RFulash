@@ -9,7 +9,6 @@ import {
   nativeKey,
   nativeLastError,
   nativeLoadSwf,
-  nativeLoadUrl,
   nativeMovieHeight,
   nativeMovieWidth,
   nativePollEvent,
@@ -105,7 +104,7 @@ export class RuffleEngine {
     return nativeDialogResult(id, paths);
   }
 
-  /** Answers a queued POST request; `status` 0 reports a network error. */
+  /** Answers a queued POST request; networking is disabled, so status is 0. */
   static httpResult(id: number, status: number, contentType: string, body: string): number {
     return nativeHttpResult(id, status, contentType, body);
   }
@@ -117,11 +116,6 @@ export class RuffleEngine {
 
   static loadSwf(path: string): number {
     return nativeLoadSwf(path);
-  }
-
-  /** Streams a root movie over HTTP(S); relative assets resolve against it. */
-  static loadUrl(url: string): number {
-    return nativeLoadUrl(url);
   }
 
   static setPlaying(playing: boolean): number {

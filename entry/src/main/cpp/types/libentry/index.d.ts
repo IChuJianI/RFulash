@@ -9,7 +9,6 @@ export const nativeLastError: () => string;
 export const nativePollEvent: () => string;
 export const nativeHttpResult: (id: number, status: number, contentType: string, body: string) => number;
 export const nativeLoadSwf: (path: string) => number;
-export const nativeLoadUrl: (url: string) => number;
 export const nativeSetPlaying: (playing: number) => number;
 export const nativeTogglePlaying: () => number;
 export const nativeKey: (action: number, keyCode: number) => number;

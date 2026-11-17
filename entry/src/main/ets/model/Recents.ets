@@ -1,13 +1,8 @@
 import { fileIo } from '@kit.CoreFileKit';
 
-/** 0 = local file, 1 = remote URL. */
-export const RECENT_FILE: number = 0;
-export const RECENT_URL: number = 1;
-
 export interface RecentMovie {
   name: string;
   source: string;
-  kind: number;
   openedAt: number;
 }
 
@@ -30,11 +25,11 @@ export class RecentsStore {
       const movies: RecentMovie[] = [];
       for (let i = 0; i < parsed.length && movies.length < MAX_RECENTS; i++) {
         const item = parsed[i];
-        if (item && item.name && item.source) {
+        if (item && item.name && item.source &&
+          !item.source.startsWith('http://') && !item.source.startsWith('https://')) {
           movies.push({
             name: this.decodeName(item.name),
             source: item.source,
-            kind: item.kind === RECENT_URL ? RECENT_URL : RECENT_FILE,
             openedAt: item.openedAt ? item.openedAt : 0
           });
         }
