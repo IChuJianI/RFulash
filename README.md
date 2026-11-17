@@ -4,6 +4,8 @@
 
 ![RFulash 应用图标](store/icon/rfulash_icon_216.png)
 
+<p align="right">RFulash 现已登陆华为应用商店，点击图标进行下载 <a href="https://appgallery.huawei.com/app/detail?id=com.52wfun.rfulash&amp;channelId=SHARE&amp;source=appshare"><img src="store/icon/appgallery_icon_400.png" width="64" alt="华为应用市场下载 RFulash" title="华为应用市场下载 RFulash"></a></p>
+
 RFulash 将 [Ruffle](https://github.com/ruffle-rs/ruffle)（Rust 实现的 Flash 模拟器）移植到 HarmonyOS NEXT，采用 ArkUI + XComponent（Surface）+ NAPI + EGL/GLES3 原生渲染，不依赖 WebView / ArkWeb。
 
 ## 功能
